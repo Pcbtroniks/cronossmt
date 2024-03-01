@@ -1,0 +1,18 @@
+{
+    "name": "358b06c6/inventory",
+    "description": "Sistema de Gesti\u0000n de Inventario",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduardo Ramírez",
+            "email": "eduardormz@protonmail.ch"
+        }
+    ],
+    "require": {
+        "kenjis/codeigniter-ss-twig": "^0.4.0",
+        "almasaeed2010/adminlte": "~3.0",
+        "dompdf/dompdf" : "^0.8.0",
+        "spipu/html2pdf": "^5.2"
+    }
+}

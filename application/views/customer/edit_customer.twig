@@ -1,0 +1,67 @@
+<!-- add member -->
+<div class="modal fade" tabindex="-1" role="dialog" id="editCustomerModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">
+					<i class="fa fa-user"></i>
+					&nbsp;Editar cliente</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+				<form method="post" action="{{ base_url() }}customers/edit-customer" id="editForm">
+
+					<div class="form-group">
+						<label for="upd_customer">Cliente</label>
+						<input type="text" class="form-control" id="upd_customer" name="customer" placeholder="Cliente">
+					</div>
+
+					<div class="form-group">
+						<label for="upd_status">Estado</label>
+						<select class="form-control" id="upd_status" name="status">
+							<option hidden>Seleccione un estado</option>
+							<option value="1">Activo</option>
+							<option value="0">Inactivo</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label>RFC</label>
+						<input type="text" class="form-control" id="upd_rfc" name="rfc">
+					</div>
+
+					<div class="form-group">
+						<label>Razón Social</label>
+						<input type="text" class="form-control" id="upd_trade_name" name="trade_name">
+					</div>
+
+					<div class="form-group">
+						<label>Correo electrónico</label>
+						<input type="text" class="form-control" id="upd_email" name="email">
+					</div>
+
+					<div class="form-group">
+						<label>Teléfono</label>
+						<input type="text" class="form-control" id="upd_phone" name="phone">
+					</div>
+
+				</div>
+				<!-- ./ modal-body -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-success">Editar</button>
+				</div>
+
+			</form>
+
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- ./add member -->

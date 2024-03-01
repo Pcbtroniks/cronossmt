@@ -1,0 +1,152 @@
+{% extends 'overall/layout.twig' %}
+
+{% block appHeader %}
+<!-- DataTables -->
+<link rel="stylesheet" href="{{ base_url() }}assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+{% endblock %}
+
+{% block appBody %}
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>
+              Descarga de Software
+            </h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item">Inicio</li>
+              <li class="breadcrumb-item active">Software</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="messages"></div>
+
+
+          <div class="card card-primary card-outline">
+          <div class="card-body">
+            <ul class="nav nav-tabs" id="custom-content-below-home-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="custom-content-below-home-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Diseño</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill" href="#custom-content-below-profile" role="tab" aria-controls="custom-content-below-profile" aria-selected="false">Oficina</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="custom-content-below-messages-tab" data-toggle="pill" href="#custom-content-below-messages" role="tab" aria-controls="custom-content-below-messages" aria-selected="false">Escencial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="custom-content-below-settings-tab" data-toggle="pill" href="#custom-content-below-settings" role="tab" aria-controls="custom-content-below-settings" aria-selected="false">Activadores - ISO</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="custom-content-below-tabContent">
+              <div class="tab-pane fade active show" id="custom-content-below-home" role="tabpanel" aria-labelledby="custom-content-below-home-tab">
+                <br>
+
+                 <a class="btn btn-app" href="https://drive.google.com/file/d/1RAvBtj8k6J873MN_lkcOxvOPlQJt6WtV/view?usp=sharing" target="_blank">
+                  <i class="fab fa-windows"></i> Illustrator CC 2020
+                </a>
+
+                <a class="btn btn-app" href="https://drive.google.com/file/d/1uC2G4Yffp3Zqg7R2_2mY3MLi-zfsAXP4/view?usp=sharing" target="_blank">
+                  <i class="fab fa-windows"></i> Photoshop CC 2020
+                </a>
+
+                <a class="btn btn-app" href="https://drive.google.com/file/d/1xQrNmyyU_snZFPjttXNn5c77kV-IxBkx/view?usp=sharing" target="_blank">
+                  <i class="fab fa-windows"></i> Corel Draw 2019
+                </a>
+
+              </div>
+              <div class="tab-pane fade" id="custom-content-below-profile" role="tabpanel" aria-labelledby="custom-content-below-profile-tab">
+                 <br>
+
+                 <a class="btn btn-app" href="https://drive.google.com/file/d/1dNcGi2lFIDChVqq_I2msTJx1TCAVp1mn/view?usp=sharing" target="_blank">
+                  <i class="fab fa-windows"></i> Office 2016 - 32 Bits
+                </a>
+
+                <a class="btn btn-app" href="https://drive.google.com/file/d/1Xb4PWRpc3GsFfY0KbBJSgdbEAvKQSiDd/view?usp=sharing" target="_blank">
+                 <i class="fab fa-windows"></i> Office 2016 - 64 Bits
+               </a>
+
+                <a class="btn btn-app" href="youtube.com" target="_blank">
+                  <i class="fab fa-windows"></i> Visio V2019
+                </a>
+
+              </div>
+              <div class="tab-pane fade" id="custom-content-below-messages" role="tabpanel" aria-labelledby="custom-content-below-messages-tab">
+                 <br>
+
+                 <a class="btn btn-app" href="youtube.com" target="_blank">
+                  <i class="fab fa-windows"></i> TeamViewer V2019
+                </a>
+
+                <a class="btn btn-app" href="youtube.com" target="_blank">
+                  <i class="fab fa-windows"></i> Nitro PDF V2019
+                </a>
+
+                <a class="btn btn-app" href="youtube.com" target="_blank">
+                  <i class="fab fa-windows"></i> CCleaner V2019
+                </a>
+
+              </div>
+              <div class="tab-pane fade" id="custom-content-below-settings" role="tabpanel" aria-labelledby="custom-content-below-settings-tab">
+                 <br>
+
+                 <a class="btn btn-app" href="youtube.com" target="_blank">
+                  <i class="fab fa-windows"></i> Windows 10
+                </a>
+
+                <a class="btn btn-app" href="youtube.com" target="_blank">
+                  <i class="fab fa-windows"></i> Office 16-19
+                </a>
+
+              </div>
+            </div>
+              <p><b>Contraseña:</b> <code>Syspcbadmin.1300</code></p>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+
+
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+{% endblock %}
+
+{% block appFooter %}
+<!-- DataTables -->
+<script src="{{ base_url() }}assets/plugins/datatables/jquery.dataTables.js"></script>
+<script src="{{ base_url() }}assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- Custom -->
+<script src="{{ base_url() }}custom/js/kits.js"></script>
+<!-- Galeria de software -->
+<script src="{{base_url() }}assets/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
+<script src="{{base_url() }}assets/plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true
+      });
+    });
+
+    $('.filter-container').filterizr({gutterPixels: 3});
+    $('.btn[data-filter]').on('click', function() {
+      $('.btn[data-filter]').removeClass('active');
+      $(this).addClass('active');
+    });
+  })
+</script>
+{% endblock %}

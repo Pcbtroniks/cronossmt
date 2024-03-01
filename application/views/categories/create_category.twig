@@ -1,0 +1,35 @@
+	<!-- add member -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="createCategoryModal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title"><i class="fa fa-user"></i> &nbsp;Añadir nueva categoría</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+
+	      <form method="post" action="{{ base_url() }}categories/create_category" id="createForm">
+
+					<div class="form-group">
+						<label for="category">Categoría</label>
+						<input type="text" class="form-control" id="category" name="category" placeholder="Categoría">
+					</div>
+
+					<div class="form-group">
+						<label for="attributes">Atributos</label>
+            <textarea type="text" class="form-control" name="attributes" id="attributes" rows="4" placeholder="Atributos en formato JSON"></textarea>
+					</div>
+
+	      </div><!-- ./ modal-body -->
+
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        <button type="submit" class="btn btn-success">Añadir nueva categoría</button>
+	      </div>
+
+	      </form>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- ./add member -->

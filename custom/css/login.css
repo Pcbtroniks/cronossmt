@@ -1,0 +1,51 @@
+.login-page, .register-page
+{
+    /* EN CASO DE NO UTILIZAR IMAGEN */
+    /* background-color: #333 !important; */
+    /*EN CASO DE BACKGROUND EN TODA LA PANTALLA*/
+    background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+    background-image: url(https://i.imgur.com/5gVttVE.jpg) !important;
+}
+
+.login-logo a, .register-logo a {
+    color: #FFFFFF !important;
+}
+
+.mobil-vertical{
+	vertical-align: middle;
+	border: 0;
+}
+
+.img-responsive{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-wb{
+  box-shadow: 0 0 black !important;
+  margin-bottom: 0;
+}
+
+.login-logo{
+  background-color: white;
+  margin-bottom: 0 !important;
+}
+
+/* NIEVE */
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+

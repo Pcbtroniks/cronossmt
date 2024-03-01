@@ -1,0 +1,146 @@
+<!-- add member -->
+<div class="modal fade" tabindex="-1" role="dialog" id="viewEquipmentModal">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">
+					<i class="fas fa-desktop"></i>
+					&nbsp;Equipo</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+ 
+				<form method="post" action="{{ base_url() }}inventory/computo/edit-equipment" id="viewForm">
+
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label>Cliente</label>
+								<select class="form-control" id="view_customer_id" disabled>
+									<option value="" selected hidden>Seleccione un cliente</option>
+									<option value="1">Hotel Isabel</option>
+									<option value="2">FCH Providencia</option>
+									<option value="3">FCH Expo</option>
+									<option value="4">Hotel Flamingos</option>
+									<option value="5">Real Maestranza Hotel</option>
+									<option value="6">Polen Avenue</option>
+									<option value="7">Hotel Arborea</option>
+									<option value="8">Motel Aruba</option>
+									<option value="9">Motel Las Garzas</option>
+									<option value="10">Santomé</option>
+									<option value="11">Sinec</option>
+									<option value="12">Bonafont</option>
+									<option value="13">Pcbtroniks</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Numero de serie</label>
+								<input type="text" class="form-control" id="view_serial_number" disabled>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Area/Encargado</label>
+								<input type="text" class="form-control" id="view_area" disabled>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Marca</label>
+								<input type="text" class="form-control" id="view_brand" disabled>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Estatus</label>
+								<select class="form-control" id="view_status" disabled>
+									<option value="" selected hidden>Estatus</option>
+									<option value="active">Active</option>
+									<option value="inactive">Inactive</option>
+									<option value="repair">Repair</option>
+									<option value="lost">Lost</option>
+									<option value="scrap">Scrap</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Almacenamiento</label>
+								<input type="number" class="form-control" id="view_storage" disabled>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Procesador</label>
+								<input type="text" class="form-control" id="view_processor" disabled>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="upd_operating_system">Sistema Operativo</label>
+						<select class="form-control" id="view_operating_system" disabled>
+							<option value="" selected hidden>SELECCIONAR SO</option>
+							<option value="windows 10">Windows 10</option>
+							<option value="windows 8">Windows 8</option>
+							<option value="windows 7">Windows 7</option>
+							<option value="windows XP">Windows XP</option>
+							<option value="macOS X 10.15">MacOS X 10.15</option>
+							<option value="macOS X 10.14">MacOS X 10.14</option>
+							<option value="macOS X 10.13">MacOS X 10.13</option>
+							<option value="linux">Linux</option>
+							<option value="chrome OS">Chrome OS</option>
+							<option value="otro">Otro</option>
+						</select>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label>Memoria RAM</label>
+							<input type="number" class="form-control" id="view_memory_ram" disabled>
+						</div>
+						<div class="col-4">
+							<label>Memoria soportada</label>
+							<input type="number" class="form-control" id="view_memory_ram_max" disabled>
+						</div>
+						<div class="col-4">
+							<label>Numero de slots</label>
+							<input type="number" class="form-control" id="view_number_slot" disabled>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label>Observaciones</label>
+						<textarea class="form-control" rows="3" id="view_observations" disabled></textarea>
+					</div>
+
+				</div>
+				<!-- ./ modal-body -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+
+			</form>
+
+
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- ./add member -->

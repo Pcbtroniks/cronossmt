@@ -1,0 +1,217 @@
+	<!-- add member -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="editUserModal">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title"><i class="fa fa-user"></i> &nbsp;Editar perfil</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+
+	      <form method="post" action="{{ base_url() }}users/edit_user" id="editForm">
+
+					<div class="form-group">
+						<label for="email">Correo electrónico</label>
+						<input type="email" class="form-control input-email" name="upd_email" placeholder="Correo electrónico">
+					</div>
+
+					<div class="form-group">
+						<label for="banned">Estado</label>
+					  <select class="form-control input-banned" name="upd_banned">
+					    <option value="" selected hidden>SELECCIONAR ROL</option>
+					    <option value="0">Activo</option>
+					    <option value="1">Inactivo</option>
+					  </select>
+					</div>
+
+					<div class="form-group">
+					  <label for="auth_level">Rol</label>
+					  <select class="form-control input-auth-level" name="upd_auth_level">
+					    <option value="" selected hidden>SELECCIONAR ROL</option>
+					    <option value="1">Cliente</option>
+					    <option value="2">Editor</option>
+					    <option value="3">Técnico</option>
+              <option value="9">Administrador</option>
+					  </select>
+					</div>
+
+					<label>Permisos ACL</label>
+					<div class="row">
+
+						<div class="col-5 col-sm-3">
+							<div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="vert-tabs-upd-users-tab" data-toggle="pill" href="#vert-tabs-upd-users" role="tab" aria-controls="vert-tabs-upd-users" aria-selected="false">Usuarios</a>
+								<a class="nav-link" id="vert-tabs-upd-customers-tab" data-toggle="pill" href="#vert-tabs-upd-customers" role="tab" aria-controls="vert-tabs-upd-customers" aria-selected="false">Clientes</a>
+								<a class="nav-link" id="vert-tabs-upd-inventory-tab" data-toggle="pill" href="#vert-tabs-upd-inventory" role="tab" aria-controls="vert-tabs-upd-inventory" aria-selected="false">Inventario</a>
+								<a class="nav-link" id="vert-tabs-upd-reports-tab" data-toggle="pill" href="#vert-tabs-upd-reports" role="tab" aria-controls="vert-tabs-upd-reports" aria-selected="false">Reportes</a>
+								<a class="nav-link" id="vert-tabs-upd-kits-tab" data-toggle="pill" href="#vert-tabs-upd-kits" role="tab" aria-controls="vert-tabs-upd-kits" aria-selected="false">Kits</a>
+								<a class="nav-link" id="vert-tabs-upd-tools-tab" data-toggle="pill" href="#vert-tabs-upd-tools" role="tab" aria-controls="vert-tabs-upd-tools" aria-selected="false">Herramientas</a>
+								<a class="nav-link" id="vert-tabs-upd-software-tab" data-toggle="pill" href="#vert-tabs-upd-software" role="tab" aria-controls="vert-tabs-upd-software" aria-selected="false">Software</a>
+							</div>
+						</div>
+						<div class="col-7 col-sm-9">
+							<div class="tab-content" id="vert-tabs-tabContent">
+
+								<div class="tab-pane fade show active" id="vert-tabs-upd-users" role="tabpanel" aria-labelledby="vert-tabs-upd-users-tab">
+									<p>Establezca los permisos para la sección <b>Usuarios</b>.</p>
+									<div class="form-group">
+										<div class="form-check">
+											<input class="form-check-input acl-1" type="checkbox" name="users_add" value="1">
+											<label class="form-check-label">Añadir</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-3" type="checkbox" name="users_edit" value="3">
+											<label class="form-check-label">Editar</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-4" type="checkbox" name="users_disable" value="4">
+											<label class="form-check-label">Deshabilitar</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-2" type="checkbox" name="users_view" value="2">
+											<label class="form-check-label">Mostrar registro</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-5" type="checkbox" name="users_list_records" value="5">
+											<label class="form-check-label">Listar registros</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="vert-tabs-upd-customers" role="tabpanel" aria-labelledby="vert-tabs-upd-customers-tab">
+									<p>Establezca los permisos para la sección <b>Clientes</b>.</p>
+									<div class="form-group">
+										<div class="form-check">
+											<input class="form-check-input acl-6" type="checkbox" name="customers_add" value="6">
+											<label class="form-check-label">Añadir</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-8" type="checkbox" name="customers_edit" value="8">
+											<label class="form-check-label">Editar</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-9" type="checkbox" name="customers_disable" value="9">
+											<label class="form-check-label">Deshabilitar</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-7" type="checkbox" name="customers_view" value="7">
+											<label class="form-check-label">Mostrar registro</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-10" type="checkbox" name="customers_list_records" value="10">
+											<label class="form-check-label">Listar registros</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="vert-tabs-upd-inventory" role="tabpanel" aria-labelledby="vert-tabs-upd-inventory-tab">
+									<p>Establezca los permisos para la sección <b>Inventario</b>.</p>
+									<div class="form-group">
+										<div class="form-check">
+											<input class="form-check-input acl-11" type="checkbox" name="inventory_add" value="11">
+											<label class="form-check-label">Añadir</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-13" type="checkbox" name="inventory_edit" value="13">
+											<label class="form-check-label">Editar</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-12" type="checkbox" name="inventory_view" value="12">
+											<label class="form-check-label">Mostrar registro</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-15" type="checkbox" name="inventory_list_records" value="15">
+											<label class="form-check-label">Listar registros</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="vert-tabs-upd-reports" role="tabpanel" aria-labelledby="vert-tabs-upd-reports-tab">
+									<p>Establezca los permisos para la sección <b>Reportes de Inventario</b>.</p>
+									<div class="form-group">
+										<div class="form-check">
+											<input class="form-check-input acl-16" type="checkbox" name="reports_inventory_add" value="16">
+											<label class="form-check-label">Añadir</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-17" type="checkbox" name="reports_inventory_view" value="17">
+											<label class="form-check-label">Mostrar registro</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-18" type="checkbox" name="reports_inventory_list_records" value="18">
+											<label class="form-check-label">Listar registros</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="vert-tabs-upd-kits" role="tabpanel" aria-labelledby="vert-tabs-upd-kits-tab">
+									<p>Establezca los permisos para la sección <b>Kits</b>.</p>
+									<div class="form-group">
+										<div class="form-check">
+											<input class="form-check-input acl-19" type="checkbox" name="kits_add" value="19">
+											<label class="form-check-label">Añadir</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-21" type="checkbox" name="kits_edit" value="21">
+											<label class="form-check-label">Editar</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-20" type="checkbox" name="kits_view" value="20">
+											<label class="form-check-label">Mostrar registro</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-23" type="checkbox" name="kits_list_records" value="23">
+											<label class="form-check-label">Listar registros</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="vert-tabs-upd-tools" role="tabpanel" aria-labelledby="vert-tabs-upd-tools-tab">
+									<p>Establezca los permisos para la sección <b>Herramientas</b>.</p>
+									<div class="form-group">
+										<div class="form-check">
+											<input class="form-check-input acl-24" type="checkbox" name="tools_add" value="24">
+											<label class="form-check-label">Añadir</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-26" type="checkbox" name="tools_edit" value="26">
+											<label class="form-check-label">Editar</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-25" type="checkbox" name="tools_view" value="25">
+											<label class="form-check-label">Mostrar registro</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input acl-28" type="checkbox" name="tools_list_records" value="28">
+											<label class="form-check-label">Listar registros</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="vert-tabs-upd-software" role="tabpanel" aria-labelledby="vert-tabs-upd-software-tab">
+									<p>Establezca los permisos para la sección <b>Software</b>.</p>
+									<div class="form-group">
+										<div class="form-check">
+											<input class="form-check-input acl-29" type="checkbox" name="software_view_section" value="29">
+											<label class="form-check-label">Visualizar sección</label>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+	      </div><!-- ./ modal-body -->
+
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        <button type="submit" class="btn btn-success">Editar perfil</button>
+	      </div>
+
+	      </form>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- ./add member -->

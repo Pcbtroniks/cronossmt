@@ -1,0 +1,157 @@
+<style type="text/css">
+<!--
+table { vertical-align: top; }
+tr    { vertical-align: top; }
+td    { vertical-align: top; }
+
+.text-center{
+	text-align:center
+}
+.text-right{
+	text-align:right
+}
+table th, td{
+	font-size:13px
+}
+.detalle td{
+	border:solid 1px #bdc3c7;
+	padding:5px;
+}
+.items{
+	border:solid 1px #bdc3c7;
+	 
+}
+.items td, th{
+	padding:10px;
+}
+.items th{
+	background-color: #16a085;
+	color:white;
+	
+}
+.border-bottom{
+	border-bottom: solic 1px #bdc3c7;
+}
+table.page_footer {width: 100%; border: none; background-color: white; padding: 2mm;border-collapse:collapse; border: none;}
+}
+-->
+</style>
+<page backtop="15mm" backbottom="15mm" backleft="15mm" backright="15mm" style="font-size: 12pt; font-family: arial" >
+        <page_footer>
+        <table class="page_footer">
+            <tr>
+
+                <td style="width: 50%; text-align: left">
+                    P&aacute;gina [[page_cu]]/[[page_nb]]
+                </td>
+                <td style="width: 50%; text-align: right">
+                    &copy; PCBTRONIKS 2021
+                </td>
+            </tr>
+        </table>
+    </page_footer>
+    <table cellspacing="0" style="width: 100%;">
+        <tr>
+
+            <td  style="width: 33%; color: #444444;">
+                <img style="width: 75%;" src="{{base_url()}}custom/img/pcb_tronikss_lg.png" alt="Logo"><br>
+                
+            </td>
+			<td style="width: 34%;">
+			<strong>E-mail : </strong> comercial@pcbtroniks.com<br>
+			<strong>Teléfono : </strong> (33) 1305 9432<br>
+			<strong>Sitio web : </strong> www.pcbtroniks.com<br>
+			</td>
+			<td style="width: 33%;">
+				<strong>PCBTRONIKS</strong> <br>
+				Guadalajara, Jalisco<br>
+		
+			</td>
+			
+        </tr>
+    </table>
+    <br>
+	<hr style="display: block;height: 1px;border: 1.5px solid #16a085;    margin: 0.5em 0;    padding: 0;">
+	<table cellspacing="0" style="width: 100%;">
+        <tr>
+
+            <td  style="width: 10%; ">               
+            </td>
+			<td style="width: 80%;text-align:center;font-size:22px;color:#16a085;padding:10px; border-radius: 5px; ">
+				COTIZACIÓN # {{details.quotation_id}}
+			</td>
+			
+			
+        </tr>
+    </table>
+	
+	<br>
+	
+	<br>
+	<table cellspacing="0" style="width: 100%;" class="detalle">
+
+		
+		<tr>
+
+            <td  style="width: 100%; "> 
+			
+				<strong>Cliente: </strong> {{details.customer}}<br>
+				<strong>RFC: </strong> {{details.rfc}}<br>
+				<strong>E-mail: </strong> {{details.email}}<br>
+				<strong>Teléfono: </strong> {{details.phone}} <br>
+                <strong>Fecha: </strong> {{details.created_at}} <br>
+                <strong>Fecha de Vencimiento: </strong> {{details.expiration_at}}
+            </td>
+
+
+			
+			
+			
+        </tr>
+    </table>
+	
+	<br>
+	
+	<br>
+	<table cellspacing="0" style="width: 100%" class='items'>
+        <tr>
+			<th style="text-align:center;width:10%">Cantidad</th>
+			<th style="text-align:center;width:10%">Unidad</th>
+			<th style="text-align:left;width:40%;">Descripción</th>
+			
+			<th style="text-align:right;width:20%">P. unitario</th>
+			<th style="text-align:right;width:20%">Importe</th>
+        </tr>
+
+        {% for concept in concepts %}
+
+		<tr>
+			<td class="border-bottom text-center">{{concept.quantity}}</td>
+			<td class="border-bottom text-center">{{concept.quantity}}</td>
+			<td class="border-bottom">{{concept.description|raw}}</td>
+			
+			<td class="border-bottom text-right">{{concept.unit_price}}</td>
+			<td class='border-bottom text-right'>{{concept.amount}}</td>
+
+		</tr>
+
+        {% endfor %}
+	<tr >
+		<td colspan=4 class='text-right' style="font-size:18px;color: #16a085">TOTAL IVA INC (MXN) </td>
+		<td class='text-right' style="font-size:18px;color:#16a085">{{details.total}}</td>
+	</tr>
+    </table>
+	
+	<br>
+	<p>
+		Autorizado por : ________________________<br>
+	</p>
+	
+	<br><br>
+	
+	<p class='text-center'>Si tiene alguna consulta relacionada con esta orden de compra, por favor contáctenos : <br>
+        PCBTroniks, (33) 1305 9432, comercial@pcbtroniks.com
+    </p>
+	
+	
+</page>

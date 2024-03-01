@@ -1,0 +1,96 @@
+	<!-- add ticket -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="addTicketModal">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title"><i class="nav-icon fas fa-ticket-alt"></i> &nbsp;Añadir ticket</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+
+	      <form method="post" action="{{ base_url() }}tickets/add" id="addTicketForm">
+
+          {% if (is_role('admin')) %}
+            <div class="form-group">
+              <label>Técnico</label>
+              <select name="user_id" class="form-control input-user_id">
+                <option value=''>Yo mismo(a)</option>
+
+                {% for technician in technicians %}
+                  <option value="{{ technician.user_id|e }}">{{ technician.full_name|e }}
+                  </option>
+                {% endfor %}
+
+              </select>
+            </div><!--./Técnico -->
+          {% endif %}
+
+          <div class="form-group">
+            <label>Cliente</label>
+            <select id="customer_id" name="customer_id" class="form-control select2 select2-hidden-accessible input-customer_id" style="width: 100%;" tabindex="-1" aria-hidden="true" min="1">
+              <option value="" selected hidden>Seleccione un cliente</option>
+            </select>
+            <small class="form-text text-muted">Nombre comercial del cliente</small>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col">
+              <label>Solicitud de</label>
+              <input type="text" class="form-control input-request_of" name="request_of">
+              <small class="form-text text-muted">Quien solicita la asistencia</small>
+            </div>
+
+            <div class="form-group col">
+              <label>Usuario final</label>
+              <input type="text" class="form-control input-end_user" name="end_user">
+              <small class="form-text text-muted">Quien recibirá la asistencia</small>
+            </div>
+
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Categoría</label>
+              <select name="category_id" class="form-control input-category_id">
+                <option selected hidden>-- SELECCIONAR --</option>
+
+                {% for category in categories %}
+                  <option value="{{ category.category_id|e }}">{{ category.category|e }}</option>
+                {% endfor %}
+
+              </select>
+            </div><!--./Categoría -->
+
+            <div class="form-group col">
+              <label>Subcategoría</label>
+              <select name="subcategory_id" class="form-control input-subcategory_id">
+                <option selected hidden>-- SELECCIONAR --</option>
+
+                {% for subcategory in subcategories %}
+                  <option value="{{ subcategory.subcategory_id|e }}">{{ subcategory.subcategory|e }}</option>
+                {% endfor %}
+
+              </select>
+            </div><!--./Subcategoría -->
+          </div>
+
+          <div class="form-group">
+          	<label>Mensaje del cliente</label>
+          	<textarea type="text" class="form-control input-msj_customer" name="msj_customer" rows="4" placeholder=""></textarea>
+            <small class="form-text text-muted">Incidente que reporta el solicitante</small>
+          </div>
+
+	      </div><!-- ./ modal-body -->
+
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-large btn-success btn-send-ticket">Añadir ticket</button>
+	      </div>
+
+	      </form>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- ./add ticket -->

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CRONOS | PCBTRONIKS</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta
+		name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="{{ base_url() }}assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="{{ base_url() }}assets/plugins/select2/css/select2.min.css">
+    <!-- Google ReCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+		<!-- Theme style -->
+		<link rel="stylesheet" href="{{ base_url() }}assets/css/adminlte.min.css">
+		<!-- overlayScrollbars -->
+		<link rel="stylesheet" href="{{ base_url() }}assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+		<!-- Google Font: Source Sans Pro -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="{{ base_url() }}custom/img/favicon.png"/>
+		<!-- JQuery Confirm -->
+		<link rel="stylesheet" href="{{ base_url() }}assets/plugins/jquery-confirm/jquery-confirm.min.css">
+		<!-- custom -->
+		<link rel="stylesheet" href="{{ base_url() }}custom/css/custom.css">
+	</head>
+	<body class="hold-transition sidebar-mini layout-fixed">
+		<div
+			class="wrapper">
+
+			<!-- Navbar -->
+			<nav
+				class="main-header navbar navbar-expand navbar-dark navbar-light">
+				<!-- Left navbar links -->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" data-widget="pushmenu" href="#" role="button">
+							<i class="fas fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- /.navbar -->
+
+			<!-- Main Sidebar Container -->
+			<aside
+				class="main-sidebar sidebar-dark-primary elevation-4">
+				<!-- Brand Logo -->
+				<a href="{{ base_url() }}servicedesk" class="brand-link">
+					<img src="{{ base_url() }}assets/img/pcbtroniks_logo_cronos.png" alt="pcbtroniks Logo" class="brand-image img-circle elevation-3" style="opacity: .9">
+					<span class="brand-text font-weight-light" style="color:#c0c5ce;">CRONOS |</span>
+					<span style="color: #5AB131; font-size: 16px;">PCBTRONIKS</span>
+				</a>
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Informar de un problema&nbsp;</h1>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item">Inicio</li>
+                  <li class="breadcrumb-item active">Mesa de ayuda</li>
+                </ol>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+
+            <div class="messages">
+            </div>
+          
+            <form method="post" action="{{ base_url() }}mesa-ayuda/add" id="addTicketForm">
+              
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Cliente</label>
+                    <select id="customer_id" name="customer_id" class="form-control select2 select2-hidden-accessible input-customer_id" style="width: 100%;" tabindex="-1" aria-hidden="true" min="1">
+                      <option value="" selected hidden>Seleccione un cliente</option>
+                    </select>
+                    <small class="form-text text-muted">Nombre comercial del cliente</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Quien solicita la asistencia</label>
+                    <input type="text" class="form-control input-request_of" id="request_of" name="request_of" placeholder="Nombre de Pila">
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Quien recibirá la asistencia</label>
+                    <input type="text" class="form-control input-end_user" id="end_user" name="end_user" placeholder="Nombre de Pila">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Mensaje del cliente</label>
+                <textarea type="text" class="form-control input-msj_customer" name="msj_customer" rows="4" placeholder=""></textarea>
+                <small class="form-text text-muted">Incidente que reporta el solicitante</small>
+              </div>
+
+              <div class="form-group">
+                <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LeWm90ZAAAAAJ3ccT0AmQg7Ngtw720k40fi1Vh9">
+                </div>
+              </div>
+
+            </form>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success btn-lg disabled" id="buttonAdd" onclick="detener()">Enviar ticket</button>
+            </div>
+
+          </div>
+        </section>
+        <!-- /.content -->
+      </div>
+			<!-- /.content-wrapper -->
+
+			<footer class="main-footer">
+				<strong>
+					<a href="{{ base_url() }}helpdesk" class="disabled">Click aqui para ponerse en contacto con un administrador</a>.</strong>
+				<div class="float-right d-none d-sm-inline-block">
+					<b>Version</b>
+					0.9.0
+				</div>
+			</footer>
+
+			<!-- Control Sidebar -->
+			<aside
+				class="control-sidebar control-sidebar-dark"><!-- Control sidebar content goes here -->
+			</aside>
+			<!-- /.control-sidebar -->
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- jQuery -->
+		<script src="{{ base_url() }}assets/plugins/jquery/jquery.min.js"></script>
+		<!-- jQuery UI 1.11.4 -->
+		<script src="{{ base_url() }}assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+		<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+		<script>
+			$.widget.bridge('uibutton', $.ui.button);
+		</script>
+		<!-- Bootstrap 4 -->
+		<script src="{{ base_url() }}assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- JQuey Confirm -->
+		<script src="{{ base_url() }}assets/plugins/jquery-confirm/jquery-confirm.min.js"></script>
+		<!-- custom -->
+		<script>
+			const BASE_URL = '{{ base_url() }}';
+		</script>
+    <!-- select2 -->
+    <script src="{{ base_url() }}assets/plugins/select2/js/select2.min.js"></script>
+    <script src="{{ base_url() }}assets/plugins/select2/js/i18n/es.js"></script>
+    <!-- moment -->
+    <script src="{{ base_url() }}assets/plugins/moment/moment.min.js"></script>
+    <script src="{{ base_url() }}assets/plugins/moment/locale/es.js"></script>
+    <!-- Tickets -->
+    <script src="{{ base_url() }}custom/js/servicedesk.js"></script>
+		<!-- Summernote -->
+		<script src="{{ base_url() }}assets/plugins/summernote/summernote-bs4.min.js"></script>
+		<!-- overlayScrollbars -->
+		<script src="{{ base_url() }}assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="{{ base_url() }}assets/js/adminlte.js"></script>
+	</body>
+</html>

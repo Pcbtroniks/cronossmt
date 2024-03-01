@@ -1,0 +1,9 @@
+.group-actions {
+    z-index: 999;
+}
+
+/* desabilitar a */
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}

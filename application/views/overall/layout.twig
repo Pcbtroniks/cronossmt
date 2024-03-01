@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CRONOS | PCBTRONIKS</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta
+		name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Font Awesome -->
+		<link
+		rel="stylesheet" href="{{ base_url() }}assets/plugins/fontawesome-free/css/all.min.css">
+		<!-- Ionicons -->
+		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> {% block appHeader %}{% endblock %}
+		<!-- Theme style -->
+		<link
+		rel="stylesheet" href="{{ base_url() }}assets/css/adminlte.min.css">
+		<!-- overlayScrollbars -->
+		<link
+		rel="stylesheet" href="{{ base_url() }}assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+		<!-- summernote -->
+		<link
+		rel="stylesheet" href="{{ base_url() }}assets/plugins/summernote/summernote-bs4.css">
+		<!-- Google Font: Source Sans Pro -->
+		<link
+		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+		<!-- favicon -->
+		<link
+		rel="shortcut icon" type="image/png" href="{{ base_url() }}custom/img/favicon.png"/>
+		<!-- JQuery Confirm -->
+		<link
+		rel="stylesheet" href="{{ base_url() }}assets/plugins/jquery-confirm/jquery-confirm.min.css">
+		<!-- custom -->
+		<link rel="stylesheet" href="{{ base_url() }}custom/css/custom.css">
+	</head>
+	<body class="hold-transition sidebar-mini layout-fixed">
+		<div
+			class="wrapper">
+
+			<!-- Navbar -->
+			<nav
+				class="main-header navbar navbar-expand navbar-dark navbar-light">
+				<!-- Left navbar links -->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" data-widget="pushmenu" href="#" role="button">
+							<i class="fas fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Right navbar links -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item d-none d-sm-inline-block">
+						<a href="{{ base_url() }}logout" class="nav-link">Cerrar sesión</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- /.navbar -->
+
+			<!-- Main Sidebar Container -->
+			<aside
+				class="main-sidebar sidebar-dark-primary elevation-4">
+				<!-- Brand Logo -->
+				<a href="{{ base_url() }}" class="brand-link">
+					<img src="{{ base_url() }}assets/img/pcbtroniks_logo_cronos.png" alt="pcbtroniks Logo" class="brand-image img-circle elevation-3" style="opacity: .9">
+					<span class="brand-text font-weight-light" style="color:#c0c5ce;">CRONOS |</span>
+					<span style="color: #5AB131; font-size: 16px;">PCBTRONIKS</span>
+				</a>
+
+				<!-- Sidebar -->
+				<div
+					class="sidebar">
+
+					<!-- Sidebar Menu -->
+					<nav class="mt-2">
+						<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+							<li class="nav-header">NAVEGACION PRINCIPAL</li>
+
+							<li class="nav-item">
+								<a href="{{ base_url() }}" class="nav-link">
+									<i class="nav-icon fas fa-tachometer-alt"></i>
+									<p>
+										Inicio
+									</p>
+								</a>
+							</li>
+
+							{% if ( (acl_permits('users.list_records')) and (acl_permits('users.edit')) ) %}
+								<li class="nav-item">
+									<a href="{{ base_url() }}users" class="nav-link">
+										<i class="nav-icon fas fas fa-users"></i>
+										<p>Usuarios</p>
+									</a>
+								</li>
+							{% endif %}
+
+							{% if (acl_permits('customers.list_records')) %}
+								<li class="nav-item">
+									<a href="{{ base_url() }}customers" class="nav-link">
+										<i class="nav-icon fas fa-address-book"></i>
+										<p>
+											Clientes
+										</p>
+									</a>
+								</li>
+							{% endif %}
+
+							{% if (acl_permits('inventory.list_records')) %}
+								<li class="nav-item has-treeview">
+									<a href="#" class="nav-link">
+										<i class="nav-icon fas fa-table"></i>
+										<p>
+											Inventario
+											<i class="fas fa-angle-left right"></i>
+										</p>
+									</a>
+									<ul class="nav nav-treeview">
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/computo" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Computo</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/printer" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Impresoras</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/televisiones" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Televisiones</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/projector" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Proyectores</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/nobreak" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>No break</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/otherproducts" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Otros</p>
+											</a>
+										</li>
+									</ul>
+								</li>
+							{% endif %}
+
+							{% if (is_role('admin') or is_role('technician')) %}
+								<li class="nav-item">
+									<a href="{{ base_url() }}quotations" class="nav-link">
+										<i class="nav-icon far fa-file-alt"></i>
+										<p>Cotizaciones</p>
+									</a>
+								</li>
+							{% endif %}
+
+
+							{% if (is_role('admin') or is_role('technician')) %}
+								<li class="nav-item">
+									<a href="{{ base_url() }}tickets" class="nav-link">
+										<i class="nav-icon fas fa-ticket-alt"></i>
+										<p>
+											Tickets
+										</p>
+									</a>
+								</li>
+							{% endif %}
+
+							
+
+							{% if (is_role('admin') or is_role('technician')) %}
+								<li class="nav-header">MISCELANEOS</li>
+
+								<li class="nav-item">
+									<a href="{{ base_url() }}documentacion" class="nav-link">
+										<i class="nav-icon fas fa-file-alt"></i>
+										<p>
+											Documentación
+										</p>
+									</a>
+								</li>
+							{% endif %}
+
+							{% if (acl_permits('software.view_section')) %}
+								<li class="nav-item">
+									<a href="{{ base_url() }}software" class="nav-link">
+										<i class="nav-icon fas fa-file-archive"></i>
+										<p>
+											Software
+										</p>
+									</a>
+								</li>
+							{% endif %}
+
+							{% if (is_role('admin')) %}
+								<li class="nav-item">
+									<a href="https://vault.bitwarden.com/#/" target="_blank" class="nav-link">
+										<i class="nav-icon fas fa-lock"></i>
+										<p>
+											Bóveda de contraseñas
+										</p>
+									</a>
+								</li>
+							{% endif %}
+
+							{% if (acl_permits('reports_inventory.list_records')) %}
+								<li class="nav-item">
+									<a href="{{ base_url() }}report" class="nav-link">
+										<i class="nav-icon fas fa-chart-pie"></i>
+										<p>Reporte</p>
+									</a>
+								</li>
+							{% endif %}
+
+							{% if (acl_permits('tools.list_records')) %}
+								<li class="nav-item has-treeview">
+									<a href="#" class="nav-link">
+										<i class="nav-icon fas fa-tools"></i>
+										<p>
+											Herramientas
+											<i class="fas fa-angle-left right"></i>
+										</p>
+									</a>
+									<ul class="nav nav-treeview">
+										<li class="nav-item">
+											<a href="{{ base_url() }}tool" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Material</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}kits" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Kit's</p>
+											</a>
+										</li>
+									</ul>
+								</li>
+							{% endif %}
+						</ul>
+					</nav>
+					<!-- /.sidebar-menu -->
+				</div>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			{% block appBody %}{% endblock %}
+			<!-- /.content-wrapper -->
+
+			<footer class="main-footer">
+				<strong>
+					<a href="{{ base_url() }}helpdesk" class="disabled">Click aqui para ponerse en contacto con un administrador</a>.</strong>
+				<div class="float-right d-none d-sm-inline-block">
+					<b>Version</b>
+					0.9.0
+				</div>
+			</footer>
+
+			<!-- Control Sidebar -->
+			<aside
+				class="control-sidebar control-sidebar-dark"><!-- Control sidebar content goes here -->
+			</aside>
+			<!-- /.control-sidebar -->
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- jQuery -->
+		<script src="{{ base_url() }}assets/plugins/jquery/jquery.min.js"></script>
+		<!-- jQuery UI 1.11.4 -->
+		<script src="{{ base_url() }}assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+		<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+		<script>
+			$.widget.bridge('uibutton', $.ui.button);
+		</script>
+		<!-- Bootstrap 4 -->
+		<script src="{{ base_url() }}assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- JQuey Confirm -->
+		<script src="{{ base_url() }}assets/plugins/jquery-confirm/jquery-confirm.min.js"></script>
+		<!-- custom -->
+		<script>
+			const BASE_URL = '{{ base_url() }}';
+		</script>
+		{% block appFooter %}{% endblock %}
+		<!-- Summernote -->
+		<script src="{{ base_url() }}assets/plugins/summernote/summernote-bs4.min.js"></script>
+		<!-- overlayScrollbars -->
+		<script src="{{ base_url() }}assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="{{ base_url() }}assets/js/adminlte.js"></script>
+	</body>
+</html>

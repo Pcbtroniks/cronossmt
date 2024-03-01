@@ -1,0 +1,135 @@
+<!-- add member -->
+<div class="modal fade" tabindex="-1" role="dialog" id="addEquipmentModal">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">
+					<i class="fas fa-desktop"></i>
+					&nbsp;Añadir nuevo equipo</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+				<form method="post" action="{{ base_url() }}inventory/computo/add-equipment" id="createForm">
+
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label>Cliente</label>
+								<select id="customer_id" name="customer_id" class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" min="1">
+									<option value="" selected hidden>Seleccione un cliente</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Numero de serie</label>
+								<input type="text" class="form-control" id="serial_number" name="serial_number" placeholder="0000000">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Area/Encargado</label>
+								<input type="text" class="form-control" id="area" name="area" placeholder="Oficina de...">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Marca</label>
+								<input type="text" class="form-control" id="brand" name="brand" placeholder="Dell">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Estatus</label>
+								<select class="form-control" id="status" name="status">
+									<option value="" selected hidden>Estatus</option>
+									<option value="active">Active</option>
+									<option value="inactive">Inactive</option>
+									<option value="repair">Repair</option>
+									<option value="lost">Lost</option>
+									<option value="scrap">Scrap</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Almacenamiento</label>
+								<input type="number" class="form-control" id="storage" name="storage" placeholder="500">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Procesador</label>
+								<input type="text" class="form-control" id="processor" name="processor" placeholder="Intel Core">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="operating_system">Sistema Operativo</label>
+						<select class="form-control" id="operating_system" name="operating_system">
+							<option value="" selected hidden>SELECCIONAR SO</option>
+							<option value="windows 10">Windows 10</option>
+							<option value="windows 8">Windows 8</option>
+							<option value="windows 7">Windows 7</option>
+							<option value="windows XP">Windows XP</option>
+							<option value="macOS X 10.15">MacOS X 10.15</option>
+							<option value="macOS X 10.14">MacOS X 10.14</option>
+							<option value="macOS X 10.13">MacOS X 10.13</option>
+							<option value="linux">Linux</option>
+							<option value="chrome OS">Chrome OS</option>
+							<option value="otro">Otro</option>
+						</select>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label>Memoria RAM</label>
+							<input type="number" class="form-control" id="memory_ram" name="memory_ram" placeholder="4">
+						</div>
+						<div class="col-4">
+							<label>Memoria soportada</label>
+							<input type="number" class="form-control" id="memory_ram_max" name="memory_ram_max" placeholder="16">
+						</div>
+						<div class="col-4">
+							<label>Numero de slots</label>
+							<input type="number" class="form-control" id="number_slot" name="number_slot" placeholder="4">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label>Observaciones</label>
+						<textarea class="form-control" rows="3" id="observations" name="observations" placeholder="Notas"></textarea>
+					</div>
+
+				</div>
+				<!-- ./ modal-body -->
+
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-success">Añadir nuevo equipo</button>
+				</div>
+
+			</form>
+
+
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- ./add member -->

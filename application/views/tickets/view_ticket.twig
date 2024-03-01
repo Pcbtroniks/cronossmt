@@ -1,0 +1,113 @@
+	<!-- edit ticket -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="viewTicketModal">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title"><i class="nav-icon fas fa-ticket-alt"></i> &nbsp;Ticket</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+
+	      <form id="viewTicketForm">
+
+          <div class="form-group">
+            <label>Cliente</label>
+            <input type="text" class="form-control input-customer" readonly>
+            <small class="form-text text-muted">Nombre comercial del cliente</small>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col">
+              <label>Solicitud de</label>
+              <input type="text" class="form-control input-request_of" readonly>
+              <small class="form-text text-muted">Quien solicita la asistencia</small>
+            </div>
+
+            <div class="form-group col">
+              <label>Usuario final</label>
+              <input type="text" class="form-control input-end_user" readonly>
+              <small class="form-text text-muted">Quien recibirá la asistencia</small>
+            </div>
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col">
+              <label>Fecha de inicio</label>
+              <input type="text" class="form-control input-created_at" readonly>
+              <small class="form-text text-muted">Levantamiento del ticket</small>
+            </div>
+
+            <div class="form-group col">
+              <label>Fecha de finalización</label>
+              <input type="text" class="form-control input-updated_at" readonly>
+              <small class="form-text text-muted">Conclusión del ticket</small>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label>Estado</label>
+            <input type="text" class="form-control input-status" readonly>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Categoría</label>
+              <select name="category_id" class="form-control input-category_id" disabled>
+                <option selected hidden>-- SELECCIONAR --</option>
+
+                {% for category in categories %}
+                  <option value="{{ category.category_id|e }}">{{ category.category|e }}</option>
+                {% endfor %}
+
+              </select>
+            </div><!--./Categoría -->
+
+            <div class="form-group col">
+              <label>Subcategoría</label>
+              <select name="subcategory_id" class="form-control input-subcategory_id" disabled>
+                <option selected hidden>-- SELECCIONAR --</option>
+
+                {% for subcategory in subcategories %}
+                  <option value="{{ subcategory.subcategory_id|e }}">{{ subcategory.subcategory|e }}</option>
+                {% endfor %}
+
+              </select>
+            </div><!--./Subcategoría -->
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h4 class="mb-4">Registro de Actividad</h4>
+              <div class="post">
+                <div class="user-block">
+                  <img class="img-circle img-bordered-sm" src="{{ base_url() }}custom/img/user_avatar.png" alt="user image">
+                  <span class="username activity-customer"></span>
+                  <span class="description activity-created_at"></span>
+                </div>
+                <!-- /.user-block -->
+                <p class="activity-msj_customer"></p>
+              </div>
+
+              <div class="activityMessages">
+                
+              </div>
+
+            </div>
+          </div><!--./ Activity -->
+
+	      </div><!-- ./ modal-body -->
+
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	      </div>
+
+	      </form>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- ./edit ticket -->

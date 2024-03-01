@@ -1,0 +1,111 @@
+{% extends 'overall/layout.twig' %}
+
+{% block appHeader %}
+<!-- DataTables -->
+<link rel="stylesheet" href="{{ base_url }}assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+{% endblock %}
+
+{% block appBody %}
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Informar de un problema&nbsp;</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item">Inicio</li>
+              <li class="breadcrumb-item active">Helpdesk</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="messages"></div>
+
+        <div class="alert alert-warning alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <h5><i class="icon fas fa-exclamation-triangle"></i> Alerta!</h5>
+                  Este reporte será resuelto en la brevedad posible.
+                </div>
+			
+			<form method="post" action="{{ base_url() }}tool/add_kits" id="createForm">
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Nombre completo</label>
+                <input type="text" class="form-control" id="namehelp" name="namehelp" placeholder="Me llamo...">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Dispositivo</label>
+                <select class="form-control" id="device" name="device">
+                  <option value="" selected hidden><i class="far fa-calendar-alt"></i>Seleccione el dispositovo que utiliza</option>
+                    <option value="celular">Smartphone</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="escritorio">Desktop</option>
+                    <option value="otro">Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label><i class="far fa-calendar-alt"> </i> ¿Desde que momento ha notado este problema?</label>
+                <select class="form-control" id="date" name="date">
+                  <option value="" selected hidden>Seleccione un rango</option>
+                    <option value="today">Hoy</option>
+                    <option value="yesterday">Ayer</option>
+                    <option value="last7">Ultimos 7 dias</option>
+                    <option value="last30">Ultimos 30 dias</option>
+                </select>
+              </div>
+            </div>
+          </div> 
+
+          <div class="form-group">
+            <label>¿Qué estabas haciendo cuando tuviste el problema?</label>
+            <textarea class="form-control" rows="3" id="bug-observations" name="bug-observations" placeholder="Descripcion"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>¿Qué pasos podemos seguir para reproducir el problema?</label>
+            <textarea class="form-control" rows="3" id="crum-observations" name="crum-observations" placeholder="Descripcion"></textarea>
+          </div>
+
+        </div><!-- ./ modal-body -->
+
+
+        <div class="modal-footer">
+          <a href="{{ base_url }}dashboard"><button type="button" class="btn btn-default">Volver</button></a>
+          <button type="submit" class="btn btn-success">Enviar Reporte</button>
+        </div>
+
+        </form>
+
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+{% endblock %}
+ 
+{% block appFooter %}
+<!-- DataTables -->
+<script src="{{ base_url }}assets/plugins/datatables/jquery.dataTables.js"></script>
+<script src="{{ base_url }}assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- Custom -->
+<script src="{{ base_url() }}custom/js/category.js"></script>
+{% endblock %}
+  

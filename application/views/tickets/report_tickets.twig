@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reporte de Incidente</title>
+    <style>
+      table {
+        background-color: white;
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      table, th, td {
+        border: 1px solid black;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #ddd;
+      }
+
+      .report-header th {
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+
+  <table class="report-header">
+    <thead>
+      <tr>
+        <th><h1 class="text-center">PCB<span style="color: #5AB131;">TRONIKS</span></h1></th>
+        <th><h1 align="center">Reporte Mensual de Tickets</h1></th>
+      </tr>
+    </thead>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="4">Información General</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th align="left">Cliente</th>
+        <td>{{customer_details.customer}}</td>
+        <th align="left">Mes del Reporte</th>
+        <td>{{month}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="6">Estadísticas</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th align="left">Pendientes</th>
+        <td>{{pending}}</td>
+        <th align="left">En Proceso</th>
+        <td>{{in_process}}</td>
+        <th align="left">Finalizados</th>
+        <td>{{finished}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Usuario Final</th>
+          <th>Incidente reportado</th>
+          <th>Actualización</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ticket in tickets %}
+          <tr>
+            <td>{{ ticket.ticket_id }}</td>
+            <td>{{ ticket.end_user }}</td>
+            <td>{{ ticket.msj_customer }}</td>
+            <td>{{ ticket.updated_at }}</td>
+            <td>{{ ticket.status }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+  </table>
+
+  </body>
+
+</html>

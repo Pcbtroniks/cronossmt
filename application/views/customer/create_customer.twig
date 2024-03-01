@@ -1,0 +1,58 @@
+<!-- add member -->
+<div class="modal fade" tabindex="-1" role="dialog" id="createCustomerModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">
+					<i class="fa fa-user"></i>
+					&nbsp;Añadir nuevo cliente</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+				<form method="post" action="{{ base_url() }}customers/create-customer" id="createForm">
+
+					<div class="form-group">
+						<label for="customer">Cliente</label>
+						<input type="text" class="form-control" id="customer" name="customer">
+					</div>
+
+					<div class="form-group">
+						<label>RFC</label>
+						<input type="text" class="form-control" id="rfc" name="rfc">
+					</div>
+
+					<div class="form-group">
+						<label>Razón Social</label>
+						<input type="text" class="form-control" id="trade_name" name="trade_name">
+					</div>
+
+					<div class="form-group">
+						<label>Correo electrónico</label>
+						<input type="text" class="form-control" id="email" name="email">
+					</div>
+
+					<div class="form-group">
+						<label>Teléfono</label>
+						<input type="text" class="form-control" id="phone" name="phone">
+					</div>
+
+				</div>
+				<!-- ./ modal-body -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-success">Añadir nuevo cliente</button>
+				</div>
+
+			</form>
+
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- ./add member -->
