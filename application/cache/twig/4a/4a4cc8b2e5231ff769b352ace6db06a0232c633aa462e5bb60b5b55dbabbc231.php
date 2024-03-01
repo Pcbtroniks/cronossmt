@@ -301,17 +301,75 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
         }
         // line 180
         echo "
+\t\t\t\t\t\t\t";
+        // line 182
+        echo "\t\t\t\t\t\t\t";
+        if (acl_permits("inventory.list_records")) {
+            // line 183
+            echo "\t\t\t\t\t\t\t\t<li class=\"nav-item has-treeview\">
+\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t<i class=\"nav-icon fas fa-solid fa-flag\"></i>
+\t\t\t\t\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t\t\t\t\tSMT Union
+\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-angle-left right\"></i>
+\t\t\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t<ul class=\"nav nav-treeview\">
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"";
+            // line 193
+            echo twig_escape_filter($this->env, base_url(), "html", null, true);
+            echo "smt/add_incidence\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Incidencias</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"";
+            // line 199
+            echo twig_escape_filter($this->env, base_url(), "html", null, true);
+            echo "inventory/printer\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Registro de tiempo extra</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"";
+            // line 205
+            echo twig_escape_filter($this->env, base_url(), "html", null, true);
+            echo "inventory/televisiones\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Mantenimiento preventivo</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"";
+            // line 211
+            echo twig_escape_filter($this->env, base_url(), "html", null, true);
+            echo "inventory/projector\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Pase de salida</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t";
+        }
+        // line 219
+        echo "\t\t\t\t\t\t\t";
+        // line 220
+        echo "
 \t\t\t\t\t\t\t
 
 \t\t\t\t\t\t\t";
-        // line 183
+        // line 223
         if ((is_role("admin") || is_role("technician"))) {
-            // line 184
+            // line 224
             echo "\t\t\t\t\t\t\t\t<li class=\"nav-header\">MISCELANEOS</li>
 
 \t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a href=\"";
-            // line 187
+            // line 227
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
             echo "documentacion\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"nav-icon fas fa-file-alt\"></i>
@@ -322,15 +380,15 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t";
         }
-        // line 195
+        // line 235
         echo "
 \t\t\t\t\t\t\t";
-        // line 196
+        // line 236
         if (acl_permits("software.view_section")) {
-            // line 197
+            // line 237
             echo "\t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a href=\"";
-            // line 198
+            // line 238
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
             echo "software\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"nav-icon fas fa-file-archive\"></i>
@@ -341,12 +399,12 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t";
         }
-        // line 206
+        // line 246
         echo "
 \t\t\t\t\t\t\t";
-        // line 207
+        // line 247
         if (is_role("admin")) {
-            // line 208
+            // line 248
             echo "\t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a href=\"https://vault.bitwarden.com/#/\" target=\"_blank\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"nav-icon fas fa-lock\"></i>
@@ -357,15 +415,15 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t";
         }
-        // line 217
+        // line 257
         echo "
 \t\t\t\t\t\t\t";
-        // line 218
+        // line 258
         if (acl_permits("reports_inventory.list_records")) {
-            // line 219
+            // line 259
             echo "\t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a href=\"";
-            // line 220
+            // line 260
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
             echo "report\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"nav-icon fas fa-chart-pie\"></i>
@@ -374,12 +432,12 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t";
         }
-        // line 226
+        // line 266
         echo "
 \t\t\t\t\t\t\t";
-        // line 227
+        // line 267
         if (acl_permits("tools.list_records")) {
-            // line 228
+            // line 268
             echo "\t\t\t\t\t\t\t\t<li class=\"nav-item has-treeview\">
 \t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"nav-icon fas fa-tools\"></i>
@@ -391,7 +449,7 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t\t<ul class=\"nav nav-treeview\">
 \t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"";
-            // line 238
+            // line 278
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
             echo "tool\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
@@ -400,7 +458,7 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"";
-            // line 244
+            // line 284
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
             echo "kits\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
@@ -411,7 +469,7 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t";
         }
-        // line 252
+        // line 292
         echo "\t\t\t\t\t\t</ul>
 \t\t\t\t\t</nav>
 \t\t\t\t\t<!-- /.sidebar-menu -->
@@ -421,15 +479,15 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 
 \t\t\t<!-- Content Wrapper. Contains page content -->
 \t\t\t";
-        // line 260
+        // line 300
         $this->displayBlock('appBody', $context, $blocks);
-        // line 261
+        // line 301
         echo "\t\t\t<!-- /.content-wrapper -->
 
 \t\t\t<footer class=\"main-footer\">
 \t\t\t\t<strong>
 \t\t\t\t\t<a href=\"";
-        // line 265
+        // line 305
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "helpdesk\" class=\"disabled\">Click aqui para ponerse en contacto con un administrador</a>.</strong>
 \t\t\t\t<div class=\"float-right d-none d-sm-inline-block\">
@@ -448,12 +506,12 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 
 \t\t<!-- jQuery -->
 \t\t<script src=\"";
-        // line 281
+        // line 321
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/jquery/jquery.min.js\"></script>
 \t\t<!-- jQuery UI 1.11.4 -->
 \t\t<script src=\"";
-        // line 283
+        // line 323
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/jquery-ui/jquery-ui.min.js\"></script>
 \t\t<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -462,38 +520,38 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t</script>
 \t\t<!-- Bootstrap 4 -->
 \t\t<script src=\"";
-        // line 289
+        // line 329
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/bootstrap/js/bootstrap.bundle.min.js\"></script>
 \t\t<!-- JQuey Confirm -->
 \t\t<script src=\"";
-        // line 291
+        // line 331
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/jquery-confirm/jquery-confirm.min.js\"></script>
 \t\t<!-- custom -->
 \t\t<script>
 \t\t\tconst BASE_URL = '";
-        // line 294
+        // line 334
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "';
 \t\t</script>
 \t\t";
-        // line 296
+        // line 336
         $this->displayBlock('appFooter', $context, $blocks);
-        // line 297
+        // line 337
         echo "\t\t<!-- Summernote -->
 \t\t<script src=\"";
-        // line 298
+        // line 338
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/summernote/summernote-bs4.min.js\"></script>
 \t\t<!-- overlayScrollbars -->
 \t\t<script src=\"";
-        // line 300
+        // line 340
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js\"></script>
 \t\t<!-- AdminLTE App -->
 \t\t<script src=\"";
-        // line 302
+        // line 342
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/js/adminlte.js\"></script>
 \t</body>
@@ -506,12 +564,12 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
     {
     }
 
-    // line 260
+    // line 300
     public function block_appBody($context, array $blocks = [])
     {
     }
 
-    // line 296
+    // line 336
     public function block_appFooter($context, array $blocks = [])
     {
     }
@@ -528,7 +586,7 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 
     public function getDebugInfo()
     {
-        return array (  515 => 296,  510 => 260,  505 => 14,  497 => 302,  492 => 300,  487 => 298,  484 => 297,  482 => 296,  477 => 294,  471 => 291,  466 => 289,  457 => 283,  452 => 281,  433 => 265,  427 => 261,  425 => 260,  415 => 252,  404 => 244,  395 => 238,  383 => 228,  381 => 227,  378 => 226,  369 => 220,  366 => 219,  364 => 218,  361 => 217,  350 => 208,  348 => 207,  345 => 206,  334 => 198,  331 => 197,  329 => 196,  326 => 195,  315 => 187,  310 => 184,  308 => 183,  303 => 180,  292 => 172,  289 => 171,  287 => 170,  283 => 168,  274 => 162,  271 => 161,  269 => 160,  266 => 159,  255 => 151,  246 => 145,  237 => 139,  228 => 133,  219 => 127,  210 => 121,  198 => 111,  196 => 110,  193 => 109,  182 => 101,  179 => 100,  177 => 99,  174 => 98,  165 => 92,  162 => 91,  160 => 90,  149 => 82,  130 => 66,  126 => 65,  113 => 55,  89 => 34,  84 => 32,  78 => 29,  69 => 23,  63 => 20,  57 => 17,  53 => 15,  51 => 14,  46 => 12,  33 => 1,);
+        return array (  573 => 336,  568 => 300,  563 => 14,  555 => 342,  550 => 340,  545 => 338,  542 => 337,  540 => 336,  535 => 334,  529 => 331,  524 => 329,  515 => 323,  510 => 321,  491 => 305,  485 => 301,  483 => 300,  473 => 292,  462 => 284,  453 => 278,  441 => 268,  439 => 267,  436 => 266,  427 => 260,  424 => 259,  422 => 258,  419 => 257,  408 => 248,  406 => 247,  403 => 246,  392 => 238,  389 => 237,  387 => 236,  384 => 235,  373 => 227,  368 => 224,  366 => 223,  361 => 220,  359 => 219,  348 => 211,  339 => 205,  330 => 199,  321 => 193,  309 => 183,  306 => 182,  303 => 180,  292 => 172,  289 => 171,  287 => 170,  283 => 168,  274 => 162,  271 => 161,  269 => 160,  266 => 159,  255 => 151,  246 => 145,  237 => 139,  228 => 133,  219 => 127,  210 => 121,  198 => 111,  196 => 110,  193 => 109,  182 => 101,  179 => 100,  177 => 99,  174 => 98,  165 => 92,  162 => 91,  160 => 90,  149 => 82,  130 => 66,  126 => 65,  113 => 55,  89 => 34,  84 => 32,  78 => 29,  69 => 23,  63 => 20,  57 => 17,  53 => 15,  51 => 14,  46 => 12,  33 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -720,6 +778,46 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t{% endif %}
+
+\t\t\t\t\t\t\t{# SMT #}
+\t\t\t\t\t\t\t{% if (acl_permits('inventory.list_records')) %}
+\t\t\t\t\t\t\t\t<li class=\"nav-item has-treeview\">
+\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t<i class=\"nav-icon fas fa-solid fa-flag\"></i>
+\t\t\t\t\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t\t\t\t\tSMT Union
+\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-angle-left right\"></i>
+\t\t\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t<ul class=\"nav nav-treeview\">
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}smt/add_incidence\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Incidencias</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}inventory/printer\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Registro de tiempo extra</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}inventory/televisiones\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Mantenimiento preventivo</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}inventory/projector\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Pase de salida</p>
+\t\t\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t{% endif %}
+\t\t\t\t\t\t\t{# SMT #}
 
 \t\t\t\t\t\t\t
 

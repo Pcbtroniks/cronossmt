@@ -178,6 +178,46 @@
 								</li>
 							{% endif %}
 
+							{# SMT #}
+							{% if (acl_permits('inventory.list_records')) %}
+								<li class="nav-item has-treeview">
+									<a href="#" class="nav-link">
+										<i class="nav-icon fas fa-solid fa-flag"></i>
+										<p>
+											SMT Union
+											<i class="fas fa-angle-left right"></i>
+										</p>
+									</a>
+									<ul class="nav nav-treeview">
+										<li class="nav-item">
+											<a href="{{ base_url() }}smt/add_incidence" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Incidencias</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/printer" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Registro de tiempo extra</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/televisiones" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Mantenimiento preventivo</p>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="{{ base_url() }}inventory/projector" class="nav-link">
+												<i class="far fa-circle nav-icon"></i>
+												<p>Pase de salida</p>
+											</a>
+										</li>
+									</ul>
+								</li>
+							{% endif %}
+							{# SMT #}
+
 							
 
 							{% if (is_role('admin') or is_role('technician')) %}
