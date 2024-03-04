@@ -1,0 +1,184 @@
+{% extends 'overall/layout.twig' %}
+
+{% block appHeader %}
+	<!-- select2 -->
+	<link
+	rel="stylesheet" href="{{ base_url() }}assets/plugins/select2/css/select2.min.css">
+	<!-- DataTables -->
+	<link rel="stylesheet" href="{{ base_url() }}assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+	<link
+	rel="stylesheet" href="{{ base_url() }}assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+	<!-- daterange picker -->
+	<link rel="stylesheet" href="{{ base_url() }}assets/plugins/daterangepicker/daterangepicker.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="{{ base_url() }}assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+	<style>
+
+	.form-control.is-invalid, .was-validated .form-control:invalid ~ .select2 .select2-selection {
+		border: 1px solid red;
+	}
+
+	</style>
+{% endblock %}
+
+{% block appBody %}
+	<div
+		class="content-wrapper">
+		<!-- Content Header (Page header) -->
+		<section class="content-header">
+			<div class="container-fluid">
+				<div class="row mb-2">
+					<div class="col-sm-6">
+						<h1>
+							Tiempo extra
+						</h1>
+					</div>
+					<div class="col-sm-6">
+						<ol class="breadcrumb float-sm-right">
+							<li class="breadcrumb-item">Inicio</li>
+                            <li class="breadcrumb-item">Tiempo Extra</li>
+							<li class="breadcrumb-item active">Registro de tiempo extra</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!-- /.container-fluid -->
+		</section>
+
+		<!-- Main content -->
+		<section class="content">
+			<div class="container-fluid">
+				<div class="messages"></div>
+
+
+				<div class="card card-primary card-outline">
+					<div class="card-body">
+
+						<div class="addConcept mb-4" >
+
+							<h3>Registrar tiempo extra</h3>
+
+							<hr class="mb-4">
+
+							<form id="addConceptForm" autocomplete="off">
+
+
+								<div class="form-row">
+
+									<input type="hidden" id="idConcept">
+
+									<div class="form-group col-xs-12 col-md-6">
+										<label for="name">Nombre</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-regular fa-user"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="name" id="name">
+										</div>
+									</div>
+
+
+									<div class="form-group col-xs-12 col-md-6">
+										<label for="employ_number">No. de empleado</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-solid fa-hashtag"></i>
+												</span>
+											</div>
+											<input type="number" min="1" class="form-control" name="employ_number" id="employ_number">
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col-xs-12 col-md-6">
+										<label for="current_date">Fecha</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-calendar-alt"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="current_date" id="current_date">
+										</div>
+									</div>
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="current_date">Horas</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="far fa-clock"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="current_date" id="current_date">
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form-row">
+
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="immediate_boss">Autorizo</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-user-tie"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="immediate_boss" id="immediate_boss">
+										</div>
+									</div>
+									
+								</div>
+
+								  <div class="form-group">
+									<label for="exampleFormControlTextarea1">Actividad</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								</div>
+
+								<div class="d-none btn-group float-right" role="group" aria-label="Basic example">
+
+									<input type="submit" class="btn btn-primary btn-submit-concept" value="Añadir"/>
+									<button type="button" class="btn btn-secondary btn-concept-cancel">Cancelar</button>
+								</div>
+							</form>
+
+						</div>
+
+						<button type="submit" class="btn btn-primary mt-5 float-right" id="guardarRequisicion" form="customerForm">Guardar</button>
+
+					</div>
+				</div>
+				<!-- /.card -->
+			</div>
+
+
+		</div>
+	</section>
+	<!-- /.content -->
+</div>{% endblock %}{% block appFooter %}
+<!-- select2 -->
+<script src="{{ base_url() }}assets/plugins/select2/js/select2.min.js"></script>
+<script src="{{ base_url() }}assets/plugins/select2/js/i18n/es.js"></script>
+<!-- DataTables -->
+<script src="{{ base_url() }}assets/plugins/datatables/jquery.dataTables.js"></script>
+<script src="{{ base_url() }}assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="{{ base_url() }}assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="{{ base_url() }}assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<!-- moment -->
+<script src="{{ base_url() }}assets/plugins/moment/moment.min.js"></script>
+<script src="{{ base_url() }}assets/plugins/moment/locale/es.js"></script>
+<!-- date-range-picker -->
+<script src="{{ base_url() }}assets/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- SweetAlert2 -->
+<script src="{{ base_url() }}assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Quotations -->
+<script src="{{ base_url() }}custom/js/quotations.js"></script>
+<!-- UUID -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+{% endblock %}

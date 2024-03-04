@@ -26,33 +26,9 @@ class Smt extends MY_Controller
 		$this->twig->display('smt/add_incidence');
 	}
 
-	public function store()
+	public function add_overtime()
 	{
-		$validator = ['success' => false, 'title' => '', 'body' => ''];
-
-		$customer_id = $this->input->post('customer_id');
-		$validity_days = $this->input->post('validity_days');
-		$concepts = json_decode($this->input->post('concepts'));
-
-		if($customer_id > 0 && $validity_days > 0 && count($concepts) > 0)
-		{
-			$add = $this->quotations_model->add($customer_id, $validity_days, $concepts); // Aquí el modelo
-
-			if($add === true) {
-				$validator['success'] = true;
-				$validator['title'] = 'Añadido exitosamente';
-				$validator['body'] = 'La cotización se ha registrado exitosamente';
-			} else {
-				$validator['success'] = false;
-				$validator['title'] = 'Error';
-				$validator['body'] = 'Se ha producido un error al registrar la cotización.';
-			}
-		} else {
-			return false;
-		}
-
-		header("Content-type: application/json; charset=utf-8");
-		echo json_encode($validator);
+		$this->twig->display('smt/add_overtime');
 	}
 
 	public function list()
