@@ -113,40 +113,6 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t<div class=\"card card-primary card-outline\">
 \t\t\t\t\t<div class=\"card-body\">
 
-\t\t\t\t\t\t<div class=\"customerDiv mb-4\">
-
-\t\t\t\t\t\t\t<h3>Incidencia</h3>
-
-\t\t\t\t\t\t\t<hr class=\"mb-4\">
-
-\t\t\t\t\t\t\t<form class=\"needs-validation\" id=\"customerForm\" novalidate>
-
-\t\t\t\t\t\t\t\t<div class=\"form-row\">
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"\">Cliente</label>
-\t\t\t\t\t\t\t\t\t\t<select id=\"customer_id\" name=\"customer_id\" class=\"form-control select2\"  style=\"width: 100%;\" required>
-\t\t\t\t\t\t\t\t\t\t\t<option value=\"\" selected hidden>Seleccione un cliente</option>
-\t\t\t\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">
-        \t\t\t\t\t\t\t\t\tEl cliente es un campo requerido.
-      \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"validityDays\">Días de validez</label>
-\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control validity-days\" name=\"validityDays\" id=\"validity_days\" required>
-
-\t\t\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">
-        \t\t\t\t\t\t\t\t\tLos días de validez son requeridos.
-      \t\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t</form>
-\t\t\t\t\t\t</div>
-
-
 \t\t\t\t\t\t<div class=\"addConcept mb-4\" >
 
 \t\t\t\t\t\t\t<h3>Nueva Incidencia</h3>
@@ -165,7 +131,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-user\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\">
@@ -178,7 +144,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cubes\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-hashtag\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control\" name=\"employ_number\" id=\"employ_number\">
@@ -193,7 +159,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-address-card\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"position\" id=\"position\">
@@ -204,7 +170,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-building\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"department\" id=\"department\">
@@ -218,7 +184,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-alt\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
@@ -229,7 +195,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-user-tie\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"immediate_boss\" id=\"immediate_boss\">
@@ -243,79 +209,87 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-building\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"company\" id=\"company\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"incident\">Incidencia</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"current_date\">Fecha de la incidencia</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-alt\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"incident\" id=\"incident\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t<div class=\"form-row\">
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Utilidad (%)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-percent\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t";
+        // line 173
+        echo "\t\t\t\t\t\t\t\t<div class=\"form-group\" id=\"vert-tabs-users\" role=\"tabpanel\" aria-labelledby=\"vert-tabs-users-tab\">
+\t\t\t\t\t\t\t\t\t<p><b>Seleccione una Incidencia</b>.</p>
+\t\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_1\" name=\"incident\" value=\"1\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_1\">Llegar tarde al área de trabajo</label>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"0\" class=\"form-control\" name=\"utility\" id=\"utility\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_2\" name=\"incident\" value=\"2\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_2\">Faltar Injustificadamente</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_3\" name=\"incident\" value=\"3\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_3\">Falta justificada (IMSS)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_4\" name=\"incident\" value=\"4\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_4\">Paternidad 5 días (PCGS = permiso con goce de sueldo)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_5\" name=\"incident\" value=\"5\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_5\">Fallecimiento 3 días (Familiar directo: Papás, conyuge e hijos)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_6\" name=\"incident\" value=\"6\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_6\">Fallecimiento 1 día (Familiar indirecto: abuelos, hermanos y tíos)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_7\" name=\"incident\" value=\"7\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_7\">Permiso SIN goce de sueldo</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_8\" name=\"incident\" value=\"8\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_8\">Permiso CON goce de sueldo</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_9\" name=\"incident\" value=\"9\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_9\">Período de lactancia (6 meses 1 hr. de Permiso con Goce de Sueldo)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_10\" name=\"incident\" value=\"10\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_10\">Vacaciones</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" id=\"incident_11\" type=\"radio\" name=\"incident\" value=\"11\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_11\">Otra causa o motivo (mencionar en \"Observaciones o comentarios\")</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Precio Unitario (Sin IVA)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-dollar-sign\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" class=\"form-control\" name=\"unitPrice\" id=\"unit_price\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-btn\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-danger rounded-0\" onclick=\"subtractVAT()\"><i class=\"fas fa-calculator\"></i> Restar IVA</button>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t<div class=\"form-row\">
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Precio Unitario (cliente)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-dollar-sign\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" class=\"form-control\" id=\"unitPriceCustomer\" readonly>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Importe (cliente)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-dollar-sign\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" class=\"form-control\" id=\"totalPriceCustomer\" readonly>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t";
+        // line 228
+        echo "
+\t\t\t\t\t\t\t\t  <div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t<label for=\"exampleFormControlTextarea1\">Observaciones o comentarios</label>
+\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">
@@ -375,58 +349,58 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 </div>";
     }
 
-    // line 316
+    // line 288
     public function block_appFooter($context, array $blocks = [])
     {
-        // line 317
+        // line 289
         echo "<!-- select2 -->
 <script src=\"";
-        // line 318
+        // line 290
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/select2/js/select2.min.js\"></script>
 <script src=\"";
-        // line 319
+        // line 291
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/select2/js/i18n/es.js\"></script>
 <!-- DataTables -->
 <script src=\"";
-        // line 321
+        // line 293
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables/jquery.dataTables.js\"></script>
 <script src=\"";
-        // line 322
+        // line 294
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js\"></script>
 <script src=\"";
-        // line 323
+        // line 295
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables-responsive/js/dataTables.responsive.min.js\"></script>
 <script src=\"";
-        // line 324
+        // line 296
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js\"></script>
 <!-- moment -->
 <script src=\"";
-        // line 326
+        // line 298
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/moment/moment.min.js\"></script>
 <script src=\"";
-        // line 327
+        // line 299
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/moment/locale/es.js\"></script>
 <!-- date-range-picker -->
 <script src=\"";
-        // line 329
+        // line 301
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/daterangepicker/daterangepicker.js\"></script>
 <!-- SweetAlert2 -->
 <script src=\"";
-        // line 331
+        // line 303
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/sweetalert2/sweetalert2.min.js\"></script>
 <!-- Quotations -->
 <script src=\"";
-        // line 333
+        // line 305
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "custom/js/quotations.js\"></script>
 <!-- UUID -->
@@ -446,7 +420,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 
     public function getDebugInfo()
     {
-        return array (  430 => 333,  425 => 331,  420 => 329,  415 => 327,  411 => 326,  406 => 324,  402 => 323,  398 => 322,  394 => 321,  389 => 319,  385 => 318,  382 => 317,  379 => 316,  84 => 25,  81 => 24,  68 => 14,  63 => 12,  58 => 10,  53 => 8,  48 => 6,  44 => 4,  41 => 3,  31 => 1,);
+        return array (  404 => 305,  399 => 303,  394 => 301,  389 => 299,  385 => 298,  380 => 296,  376 => 295,  372 => 294,  368 => 293,  363 => 291,  359 => 290,  356 => 289,  353 => 288,  289 => 228,  233 => 173,  84 => 25,  81 => 24,  68 => 14,  63 => 12,  58 => 10,  53 => 8,  48 => 6,  44 => 4,  41 => 3,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -515,40 +489,6 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t<div class=\"card card-primary card-outline\">
 \t\t\t\t\t<div class=\"card-body\">
 
-\t\t\t\t\t\t<div class=\"customerDiv mb-4\">
-
-\t\t\t\t\t\t\t<h3>Incidencia</h3>
-
-\t\t\t\t\t\t\t<hr class=\"mb-4\">
-
-\t\t\t\t\t\t\t<form class=\"needs-validation\" id=\"customerForm\" novalidate>
-
-\t\t\t\t\t\t\t\t<div class=\"form-row\">
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"\">Cliente</label>
-\t\t\t\t\t\t\t\t\t\t<select id=\"customer_id\" name=\"customer_id\" class=\"form-control select2\"  style=\"width: 100%;\" required>
-\t\t\t\t\t\t\t\t\t\t\t<option value=\"\" selected hidden>Seleccione un cliente</option>
-\t\t\t\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">
-        \t\t\t\t\t\t\t\t\tEl cliente es un campo requerido.
-      \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"validityDays\">Días de validez</label>
-\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control validity-days\" name=\"validityDays\" id=\"validity_days\" required>
-
-\t\t\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">
-        \t\t\t\t\t\t\t\t\tLos días de validez son requeridos.
-      \t\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t</form>
-\t\t\t\t\t\t</div>
-
-
 \t\t\t\t\t\t<div class=\"addConcept mb-4\" >
 
 \t\t\t\t\t\t\t<h3>Nueva Incidencia</h3>
@@ -567,7 +507,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-user\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\">
@@ -580,7 +520,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cubes\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-hashtag\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control\" name=\"employ_number\" id=\"employ_number\">
@@ -595,7 +535,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-address-card\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"position\" id=\"position\">
@@ -606,7 +546,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-building\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"department\" id=\"department\">
@@ -620,7 +560,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-alt\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
@@ -631,7 +571,7 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-user-tie\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"immediate_boss\" id=\"immediate_boss\">
@@ -645,79 +585,85 @@ class __TwigTemplate_89c8465794f5e51adcf5af5e1a66837f7d017079bb485f816c63af39fe8
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-building\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"company\" id=\"company\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"incident\">Incidencia</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"current_date\">Fecha de la incidencia</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-keyboard\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-alt\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"incident\" id=\"incident\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t<div class=\"form-row\">
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Utilidad (%)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-percent\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t{# Lista de incidencias #}
+\t\t\t\t\t\t\t\t<div class=\"form-group\" id=\"vert-tabs-users\" role=\"tabpanel\" aria-labelledby=\"vert-tabs-users-tab\">
+\t\t\t\t\t\t\t\t\t<p><b>Seleccione una Incidencia</b>.</p>
+\t\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_1\" name=\"incident\" value=\"1\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_1\">Llegar tarde al área de trabajo</label>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"0\" class=\"form-control\" name=\"utility\" id=\"utility\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_2\" name=\"incident\" value=\"2\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_2\">Faltar Injustificadamente</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_3\" name=\"incident\" value=\"3\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_3\">Falta justificada (IMSS)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_4\" name=\"incident\" value=\"4\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_4\">Paternidad 5 días (PCGS = permiso con goce de sueldo)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_5\" name=\"incident\" value=\"5\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_5\">Fallecimiento 3 días (Familiar directo: Papás, conyuge e hijos)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_6\" name=\"incident\" value=\"6\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_6\">Fallecimiento 1 día (Familiar indirecto: abuelos, hermanos y tíos)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_7\" name=\"incident\" value=\"7\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_7\">Permiso SIN goce de sueldo</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_8\" name=\"incident\" value=\"8\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_8\">Permiso CON goce de sueldo</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_9\" name=\"incident\" value=\"9\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_9\">Período de lactancia (6 meses 1 hr. de Permiso con Goce de Sueldo)</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" id=\"incident_10\" name=\"incident\" value=\"10\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_10\">Vacaciones</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"form-check\">
+\t\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" id=\"incident_11\" type=\"radio\" name=\"incident\" value=\"11\">
+\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"incident_11\">Otra causa o motivo (mencionar en \"Observaciones o comentarios\")</label>
+\t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Precio Unitario (Sin IVA)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-dollar-sign\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" class=\"form-control\" name=\"unitPrice\" id=\"unit_price\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-btn\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-danger rounded-0\" onclick=\"subtractVAT()\"><i class=\"fas fa-calculator\"></i> Restar IVA</button>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t{# Lista de incidencias #}
 
-\t\t\t\t\t\t\t\t<div class=\"form-row\">
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Precio Unitario (cliente)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-dollar-sign\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" class=\"form-control\" id=\"unitPriceCustomer\" readonly>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label>Importe (cliente)</label>
-\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-dollar-sign\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" class=\"form-control\" id=\"totalPriceCustomer\" readonly>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t  <div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t<label for=\"exampleFormControlTextarea1\">Observaciones o comentarios</label>
+\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">
