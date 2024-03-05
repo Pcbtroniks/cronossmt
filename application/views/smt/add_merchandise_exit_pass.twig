@@ -30,14 +30,14 @@
 				<div class="row mb-2">
 					<div class="col-sm-6">
 						<h1>
-							Incidencias
+							Pase de salida de mercancia ordinaria
 						</h1>
 					</div>
 					<div class="col-sm-6">
 						<ol class="breadcrumb float-sm-right">
 							<li class="breadcrumb-item">Inicio</li>
-                            <li class="breadcrumb-item">Incidencias</li>
-							<li class="breadcrumb-item active">Nueva incidencia</li>
+                            <li class="breadcrumb-item">Mercancia</li>
+							<li class="breadcrumb-item active">Pase de salida</li>
 						</ol>
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 
 						<div class="addConcept mb-4" >
 
-							<h3>Nueva Incidencia</h3>
+							<h3>Registrar salida de mercancia</h3>
 
 							<hr class="mb-4">
 
@@ -65,10 +65,8 @@
 
 								<div class="form-row">
 
-									<input type="hidden" id="idConcept">
-
 									<div class="form-group col-xs-12 col-md-6">
-										<label for="name">Nombre</label>
+										<label for="name">Nombre completo de quien traslada</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
@@ -79,24 +77,8 @@
 										</div>
 									</div>
 
-
 									<div class="form-group col-xs-12 col-md-6">
-										<label for="employ_number">No. de empleado</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">
-													<i class="fas fa-solid fa-hashtag"></i>
-												</span>
-											</div>
-											<input type="number" min="1" class="form-control" name="employ_number" id="employ_number">
-										</div>
-									</div>
-
-								</div>
-
-								<div class="form-row">
-									<div class="form-group col-xs-12 col-md-6">
-										<label for="position">Puesto</label>
+										<label for="position">Puesto de quien traslada</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
@@ -106,58 +88,40 @@
 											<input type="text" class="form-control" name="position" id="position">
 										</div>
 									</div>
-									<div class="form-group col-xs-12 col-md-6">
-										<label for="department">Departamento</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">
-													<i class="fas fa-solid fa-building"></i>
-												</span>
-											</div>
-											<input type="text" class="form-control" name="department" id="department">
-										</div>
-									</div>
+
 								</div>
 
 								<div class="form-row">
+
 									<div class="form-group col-xs-12 col-md-6">
-										<label for="current_date">Fecha actual</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">
-													<i class="fas fa-calendar-alt"></i>
-												</span>
-											</div>
-											<input type="text" class="form-control" name="current_date" id="current_date">
-										</div>
-									</div>
-									<div class="form-group col-xs-12 col-md-6">
-										<label for="immediate_boss">Jefe inmediato</label>
+										<label for="name">Nombre completo de quien revisa</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
 													<i class="fas fa-user-tie"></i>
 												</span>
 											</div>
-											<input type="text" class="form-control" name="immediate_boss" id="immediate_boss">
+											<input type="text" class="form-control" name="name" id="name">
 										</div>
 									</div>
+
+									<div class="form-group col-xs-12 col-md-6">
+										<label for="position">Puesto de quien revisa</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-solid fa-address-card"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="position" id="position">
+										</div>
+									</div>
+
 								</div>
 
 								<div class="form-row">
 									<div class="form-group col-xs-12 col-md-6">
-										<label for="company">Empresa</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">
-													<i class="far fa-building"></i>
-												</span>
-											</div>
-											<input type="text" class="form-control" name="company" id="company">
-										</div>
-									</div>
-									<div class="form-group col-xs-12 col-md-6">
-										<label for="current_date">Fecha de la incidencia</label>
+										<label for="current_date">Fecha</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
@@ -167,74 +131,63 @@
 											<input type="text" class="form-control" name="current_date" id="current_date">
 										</div>
 									</div>
-									
-								</div>
-								{# Lista de incidencias #}
-								<div class="form-group" id="vert-tabs-users" role="tabpanel" aria-labelledby="vert-tabs-users-tab">
-									<p><b>Seleccione una Incidencia</b>.</p>
-									<div class="form-row">
-										<div class="form-group col-xs-12 col-md-6">
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_1" name="incident" value="1">
-												<label class="form-check-label" for="incident_1">Llegar tarde al área de trabajo</label>
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="current_date">Hora</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="far fa-clock"></i>
+												</span>
 											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_2" name="incident" value="2">
-												<label class="form-check-label" for="incident_2">Faltar Injustificadamente</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_3" name="incident" value="3">
-												<label class="form-check-label" for="incident_3">Falta justificada (IMSS)</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_4" name="incident" value="4">
-												<label class="form-check-label" for="incident_4">Paternidad 5 días (PCGS = permiso con goce de sueldo)</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_5" name="incident" value="5">
-												<label class="form-check-label" for="incident_5">Fallecimiento 3 días (Familiar directo: Papás, conyuge e hijos)</label>
-											</div>
-												<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_6" name="incident" value="6">
-												<label class="form-check-label" for="incident_6">Fallecimiento 1 día (Familiar indirecto: abuelos, hermanos y tíos)</label>
-											</div>
+											<input type="text" class="form-control" name="current_date" id="current_date">
 										</div>
-										<div class="form-group col-xs-12 col-md-6">
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_7" name="incident" value="7">
-												<label class="form-check-label" for="incident_7">Permiso SIN goce de sueldo</label>
+									</div>
+
+								</div>
+
+								<div class="form-row">
+
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="immediate_boss">Reseña particular de la mercancia</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-cog"></i>
+												</span>
 											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_8" name="incident" value="8">
-												<label class="form-check-label" for="incident_8">Permiso CON goce de sueldo</label>
+											<input type="text" class="form-control" name="immediate_boss" id="immediate_boss">
+										</div>
+									</div>
+
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="immediate_boss">Numero de serie</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-hashtag"></i>
+												</span>
 											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_9" name="incident" value="9">
-												<label class="form-check-label" for="incident_9">Período de lactancia (6 meses 1 hr. de Permiso con Goce de Sueldo)</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" id="incident_10" name="incident" value="10">
-												<label class="form-check-label" for="incident_10">Vacaciones</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" id="incident_11" type="radio" name="incident" value="11">
-												<label class="form-check-label" for="incident_11">Otra causa o motivo (mencionar en "Observaciones o comentarios")</label>
-											</div>
+											<input type="text" class="form-control" name="immediate_boss" id="immediate_boss">
 										</div>
 									</div>
 									
 								</div>
-								{# Lista de incidencias #}
 
 								  <div class="form-group">
-									<label for="exampleFormControlTextarea1">Observaciones o comentarios</label>
+									<label for="exampleFormControlTextarea1">Observaciones</label>
 									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								</div>
+
+								<div class="d-none btn-group float-right" role="group" aria-label="Basic example">
+
+									<input type="submit" class="btn btn-primary btn-submit-concept" value="Añadir"/>
+									<button type="button" class="btn btn-secondary btn-concept-cancel">Cancelar</button>
 								</div>
 							</form>
 
 						</div>
 
-						<button type="submit" class="btn btn-primary mt-5 float-right" id="guardarRequisicion" form="customerForm">Guardar cotización</button>
+						<button type="submit" class="btn btn-primary mt-5 float-right" id="guardarRequisicion" form="customerForm">Guardar</button>
 
 					</div>
 				</div>

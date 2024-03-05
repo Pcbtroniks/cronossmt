@@ -328,7 +328,7 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"";
             // line 199
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
-            echo "inventory/printer\" class=\"nav-link\">
+            echo "smt/add_overtime\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t<p>Registro de tiempo extra</p>
 \t\t\t\t\t\t\t\t\t\t\t</a>
@@ -337,7 +337,7 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"";
             // line 205
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
-            echo "inventory/televisiones\" class=\"nav-link\">
+            echo "smt/add_maintenance\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t<p>Mantenimiento preventivo</p>
 \t\t\t\t\t\t\t\t\t\t\t</a>
@@ -346,9 +346,9 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"";
             // line 211
             echo twig_escape_filter($this->env, base_url(), "html", null, true);
-            echo "inventory/projector\" class=\"nav-link\">
+            echo "smt/add_merchandise_exit_pass\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t<p>Pase de salida</p>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Salida de mercancia</p>
 \t\t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t</ul>
@@ -797,21 +797,21 @@ class __TwigTemplate_2b257a55bd5b0b4d29b26f06b7d64b36139187d6f8943ef749159fb30a8
 \t\t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}inventory/printer\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}smt/add_overtime\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t<p>Registro de tiempo extra</p>
 \t\t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}inventory/televisiones\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}smt/add_maintenance\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t<p>Mantenimiento preventivo</p>
 \t\t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}inventory/projector\" class=\"nav-link\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ base_url() }}smt/add_merchandise_exit_pass\" class=\"nav-link\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-circle nav-icon\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t<p>Pase de salida</p>
+\t\t\t\t\t\t\t\t\t\t\t\t<p>Salida de mercancia</p>
 \t\t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t</ul>

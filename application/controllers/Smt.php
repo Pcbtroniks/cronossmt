@@ -31,6 +31,15 @@ class Smt extends MY_Controller
 		$this->twig->display('smt/add_overtime');
 	}
 
+	public function add_maintenance()
+	{
+		$this->twig->display('smt/add_maintenance');
+	}
+	public function add_merchandise_exit_pass()
+	{
+		$this->twig->display('smt/add_merchandise_exit_pass');
+	}
+
 	public function list()
 	{
 		$result = ['data' => []];
