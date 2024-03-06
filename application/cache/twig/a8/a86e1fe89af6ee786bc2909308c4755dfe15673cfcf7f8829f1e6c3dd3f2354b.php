@@ -89,14 +89,14 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 \t\t\t\t<div class=\"row mb-2\">
 \t\t\t\t\t<div class=\"col-sm-6\">
 \t\t\t\t\t\t<h1>
-\t\t\t\t\t\t\tInforme de servicio
+\t\t\t\t\t\t\tService Report
 \t\t\t\t\t\t</h1>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-sm-6\">
 \t\t\t\t\t\t<ol class=\"breadcrumb float-sm-right\">
 \t\t\t\t\t\t\t<li class=\"breadcrumb-item\">Inicio</li>
-                            <li class=\"breadcrumb-item\">Mantenimiento</li>
-\t\t\t\t\t\t\t<li class=\"breadcrumb-item active\">Informe de servicio</li>
+                            <li class=\"breadcrumb-item\">Maintenance</li>
+\t\t\t\t\t\t\t<li class=\"breadcrumb-item active\">Service Report</li>
 \t\t\t\t\t\t</ol>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -115,7 +115,7 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 
 \t\t\t\t\t\t<div class=\"addConcept mb-4\" >
 
-\t\t\t\t\t\t\t<h3>Registrar informe de servicio</h3>
+\t\t\t\t\t\t\t<h3>Register Service Report</h3>
 
 \t\t\t\t\t\t\t<hr class=\"mb-4\">
 
@@ -127,27 +127,27 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 \t\t\t\t\t\t\t\t\t<input type=\"hidden\" id=\"idConcept\">
 
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"name\">Nombre</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"customer_address\">Customer Address</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-user\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-address-card\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"customer_address\" id=\"customer_address\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 
 
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"employ_number\">No. de empleado</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"type_of_service\">Type of Service Call</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-hashtag\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-check\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control\" name=\"employ_number\" id=\"employ_number\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"type_of_service\" id=\"type_of_service\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 
@@ -155,25 +155,25 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 
 \t\t\t\t\t\t\t\t<div class=\"form-row\">
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"current_date\">Fecha</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"invoice_to_quote\">Invoice to quote</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-alt\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-file-alt\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"invoice_to_quote\" id=\"invoice_to_quote\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
                                     <div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"current_date\">Horas</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"customer_po\">Customer PO</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-clock\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-user\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"customer_po\" id=\"customer_po\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 
@@ -182,22 +182,192 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 \t\t\t\t\t\t\t\t<div class=\"form-row\">
 
                                     <div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"immediate_boss\">Autorizo</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"mc_type\">M/C Type</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-user-tie\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cog\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"immediate_boss\" id=\"immediate_boss\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"mc_type\" id=\"mc_type\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"model\">Model</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cog\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"model\" id=\"model\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"serial\">Serial Number</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-hashtag\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"serial\" id=\"serial\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"mfg_year\">Mfg year</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cogs\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"mfg_year\" id=\"model\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t\t<p class=\"d-inline\"><b>Status: &nbsp;</b></p>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"status\" id=\"status_open\" value=\"open\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"status_open\">Open</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"status\" id=\"status_closed\" value=\"closed\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"status_closed\">Closed</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t\t<p class=\"d-inline\"><b>Overtime Accepted: &nbsp;</b></p>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"overtime_accepted\" id=\"overtime_yes\" value=\"yes\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"overtime_yes\">Yes</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"overtime_accepted\" id=\"overtime_no\" value=\"no\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"overtime_no\">No</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t\t<p class=\"d-inline\"><b>Parts Used: &nbsp;</b></p>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"parts_used\" id=\"parts_used_yes\" value=\"yes\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"parts_used_yes\">Yes</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"parts_used\" id=\"parts_used_no\" value=\"no\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"parts_used_no\">No</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t  <div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<label for=\"exampleFormControlTextarea1\">Actividad</label>
-\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>
+\t\t\t\t\t\t\t\t\t<label for=\"service_details\">Service Details</label>
+\t\t\t\t\t\t\t\t\t<textarea name=\"service_details\" class=\"form-control\" id=\"service_details\" rows=\"3\"></textarea>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"operation\">Operation</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-wrench\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"operation\" id=\"operation\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">Date</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-calendar\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-4\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"operation\">Start time</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-wrench\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"operation\" id=\"operation\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-4\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">End time</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-calendar\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-4\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">Total</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-calendar\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"operation\">Type</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-wrench\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"operation\" id=\"operation\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">Technician</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-user\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<div class=\"d-none btn-group float-right\" role=\"group\" aria-label=\"Basic example\">
@@ -209,7 +379,7 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 
 \t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary mt-5 float-right\" id=\"guardarRequisicion\" form=\"customerForm\">Guardar</button>
+\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary mt-5 float-right\" id=\"guardarRequisicion\" form=\"customerForm\">Save</button>
 
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -223,58 +393,58 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 </div>";
     }
 
-    // line 164
+    // line 334
     public function block_appFooter($context, array $blocks = [])
     {
-        // line 165
+        // line 335
         echo "<!-- select2 -->
 <script src=\"";
-        // line 166
+        // line 336
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/select2/js/select2.min.js\"></script>
 <script src=\"";
-        // line 167
+        // line 337
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/select2/js/i18n/es.js\"></script>
 <!-- DataTables -->
 <script src=\"";
-        // line 169
+        // line 339
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables/jquery.dataTables.js\"></script>
 <script src=\"";
-        // line 170
+        // line 340
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js\"></script>
 <script src=\"";
-        // line 171
+        // line 341
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables-responsive/js/dataTables.responsive.min.js\"></script>
 <script src=\"";
-        // line 172
+        // line 342
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js\"></script>
 <!-- moment -->
 <script src=\"";
-        // line 174
+        // line 344
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/moment/moment.min.js\"></script>
 <script src=\"";
-        // line 175
+        // line 345
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/moment/locale/es.js\"></script>
 <!-- date-range-picker -->
 <script src=\"";
-        // line 177
+        // line 347
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/daterangepicker/daterangepicker.js\"></script>
 <!-- SweetAlert2 -->
 <script src=\"";
-        // line 179
+        // line 349
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/plugins/sweetalert2/sweetalert2.min.js\"></script>
 <!-- Quotations -->
 <script src=\"";
-        // line 181
+        // line 351
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "custom/js/quotations.js\"></script>
 <!-- UUID -->
@@ -294,7 +464,7 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 
     public function getDebugInfo()
     {
-        return array (  278 => 181,  273 => 179,  268 => 177,  263 => 175,  259 => 174,  254 => 172,  250 => 171,  246 => 170,  242 => 169,  237 => 167,  233 => 166,  230 => 165,  227 => 164,  84 => 25,  81 => 24,  68 => 14,  63 => 12,  58 => 10,  53 => 8,  48 => 6,  44 => 4,  41 => 3,  31 => 1,);
+        return array (  448 => 351,  443 => 349,  438 => 347,  433 => 345,  429 => 344,  424 => 342,  420 => 341,  416 => 340,  412 => 339,  407 => 337,  403 => 336,  400 => 335,  397 => 334,  84 => 25,  81 => 24,  68 => 14,  63 => 12,  58 => 10,  53 => 8,  48 => 6,  44 => 4,  41 => 3,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -339,14 +509,14 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 \t\t\t\t<div class=\"row mb-2\">
 \t\t\t\t\t<div class=\"col-sm-6\">
 \t\t\t\t\t\t<h1>
-\t\t\t\t\t\t\tInforme de servicio
+\t\t\t\t\t\t\tService Report
 \t\t\t\t\t\t</h1>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-sm-6\">
 \t\t\t\t\t\t<ol class=\"breadcrumb float-sm-right\">
 \t\t\t\t\t\t\t<li class=\"breadcrumb-item\">Inicio</li>
-                            <li class=\"breadcrumb-item\">Mantenimiento</li>
-\t\t\t\t\t\t\t<li class=\"breadcrumb-item active\">Informe de servicio</li>
+                            <li class=\"breadcrumb-item\">Maintenance</li>
+\t\t\t\t\t\t\t<li class=\"breadcrumb-item active\">Service Report</li>
 \t\t\t\t\t\t</ol>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -365,7 +535,7 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 
 \t\t\t\t\t\t<div class=\"addConcept mb-4\" >
 
-\t\t\t\t\t\t\t<h3>Registrar informe de servicio</h3>
+\t\t\t\t\t\t\t<h3>Register Service Report</h3>
 
 \t\t\t\t\t\t\t<hr class=\"mb-4\">
 
@@ -377,27 +547,27 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 \t\t\t\t\t\t\t\t\t<input type=\"hidden\" id=\"idConcept\">
 
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"name\">Nombre</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"customer_address\">Customer Address</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-user\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-address-card\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"customer_address\" id=\"customer_address\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 
 
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"employ_number\">No. de empleado</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"type_of_service\">Type of Service Call</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-hashtag\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-check\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"number\" min=\"1\" class=\"form-control\" name=\"employ_number\" id=\"employ_number\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"type_of_service\" id=\"type_of_service\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 
@@ -405,25 +575,25 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 
 \t\t\t\t\t\t\t\t<div class=\"form-row\">
 \t\t\t\t\t\t\t\t\t<div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"current_date\">Fecha</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"invoice_to_quote\">Invoice to quote</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-calendar-alt\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-file-alt\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"invoice_to_quote\" id=\"invoice_to_quote\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
                                     <div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"current_date\">Horas</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"customer_po\">Customer PO</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"far fa-clock\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-user\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"current_date\" id=\"current_date\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"customer_po\" id=\"customer_po\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 
@@ -432,22 +602,192 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 \t\t\t\t\t\t\t\t<div class=\"form-row\">
 
                                     <div class=\"form-group col-xs-12 col-md-6\">
-\t\t\t\t\t\t\t\t\t\t<label for=\"immediate_boss\">Autorizo</label>
+\t\t\t\t\t\t\t\t\t\t<label for=\"mc_type\">M/C Type</label>
 \t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
 \t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-user-tie\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cog\"></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"immediate_boss\" id=\"immediate_boss\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"mc_type\" id=\"mc_type\">
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"model\">Model</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cog\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"model\" id=\"model\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"serial\">Serial Number</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-hashtag\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"serial\" id=\"serial\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"mfg_year\">Mfg year</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-cogs\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"mfg_year\" id=\"model\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t\t<p class=\"d-inline\"><b>Status: &nbsp;</b></p>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"status\" id=\"status_open\" value=\"open\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"status_open\">Open</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"status\" id=\"status_closed\" value=\"closed\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"status_closed\">Closed</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t\t<p class=\"d-inline\"><b>Overtime Accepted: &nbsp;</b></p>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"overtime_accepted\" id=\"overtime_yes\" value=\"yes\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"overtime_yes\">Yes</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"overtime_accepted\" id=\"overtime_no\" value=\"no\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"overtime_no\">No</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+\t\t\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t\t\t<p class=\"d-inline\"><b>Parts Used: &nbsp;</b></p>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"parts_used\" id=\"parts_used_yes\" value=\"yes\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"parts_used_yes\">Yes</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"form-check form-check-inline\">
+\t\t\t\t\t\t\t\t\t\t\t<input class=\"form-check-input\" type=\"radio\" name=\"parts_used\" id=\"parts_used_no\" value=\"no\">
+\t\t\t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"parts_used_no\">No</label>
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t  <div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<label for=\"exampleFormControlTextarea1\">Actividad</label>
-\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>
+\t\t\t\t\t\t\t\t\t<label for=\"service_details\">Service Details</label>
+\t\t\t\t\t\t\t\t\t<textarea name=\"service_details\" class=\"form-control\" id=\"service_details\" rows=\"3\"></textarea>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"operation\">Operation</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-wrench\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"operation\" id=\"operation\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">Date</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-calendar\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-4\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"operation\">Start time</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-wrench\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"operation\" id=\"operation\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-4\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">End time</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-calendar\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-4\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">Total</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-regular fa-calendar\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"form-row\">
+
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"operation\">Type</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-wrench\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"operation\" id=\"operation\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+                                    <div class=\"form-group col-xs-12 col-md-6\">
+\t\t\t\t\t\t\t\t\t\t<label for=\"date\">Technician</label>
+\t\t\t\t\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t\t\t\t\t<div class=\"input-group-prepend\">
+\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"input-group-text\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fas fa-solid fa-user\"></i>
+\t\t\t\t\t\t\t\t\t\t\t\t</span>
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\" id=\"date\">
+\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t</div>
+
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<div class=\"d-none btn-group float-right\" role=\"group\" aria-label=\"Basic example\">
@@ -459,7 +799,7 @@ class __TwigTemplate_7900971ad042d57e47db6f3520a4e6b72628623baa52dd2778382372a51
 
 \t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary mt-5 float-right\" id=\"guardarRequisicion\" form=\"customerForm\">Guardar</button>
+\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary mt-5 float-right\" id=\"guardarRequisicion\" form=\"customerForm\">Save</button>
 
 \t\t\t\t\t</div>
 \t\t\t\t</div>

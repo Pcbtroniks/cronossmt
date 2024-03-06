@@ -30,14 +30,14 @@
 				<div class="row mb-2">
 					<div class="col-sm-6">
 						<h1>
-							Informe de servicio
+							Service Report
 						</h1>
 					</div>
 					<div class="col-sm-6">
 						<ol class="breadcrumb float-sm-right">
 							<li class="breadcrumb-item">Inicio</li>
-                            <li class="breadcrumb-item">Mantenimiento</li>
-							<li class="breadcrumb-item active">Informe de servicio</li>
+                            <li class="breadcrumb-item">Maintenance</li>
+							<li class="breadcrumb-item active">Service Report</li>
 						</ol>
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 
 						<div class="addConcept mb-4" >
 
-							<h3>Registrar informe de servicio</h3>
+							<h3>Register Service Report</h3>
 
 							<hr class="mb-4">
 
@@ -68,27 +68,27 @@
 									<input type="hidden" id="idConcept">
 
 									<div class="form-group col-xs-12 col-md-6">
-										<label for="name">Nombre</label>
+										<label for="customer_address">Customer Address</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
-													<i class="fas fa-regular fa-user"></i>
+													<i class="fas fa-address-card"></i>
 												</span>
 											</div>
-											<input type="text" class="form-control" name="name" id="name">
+											<input type="text" class="form-control" name="customer_address" id="customer_address">
 										</div>
 									</div>
 
 
 									<div class="form-group col-xs-12 col-md-6">
-										<label for="employ_number">No. de empleado</label>
+										<label for="type_of_service">Type of Service Call</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
-													<i class="fas fa-solid fa-hashtag"></i>
+													<i class="fas fa-calendar-check"></i>
 												</span>
 											</div>
-											<input type="number" min="1" class="form-control" name="employ_number" id="employ_number">
+											<input type="text" class="form-control" name="type_of_service" id="type_of_service">
 										</div>
 									</div>
 
@@ -96,25 +96,25 @@
 
 								<div class="form-row">
 									<div class="form-group col-xs-12 col-md-6">
-										<label for="current_date">Fecha</label>
+										<label for="invoice_to_quote">Invoice to quote</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
-													<i class="fas fa-calendar-alt"></i>
+													<i class="fas fa-file-alt"></i>
 												</span>
 											</div>
-											<input type="text" class="form-control" name="current_date" id="current_date">
+											<input type="text" class="form-control" name="invoice_to_quote" id="invoice_to_quote">
 										</div>
 									</div>
                                     <div class="form-group col-xs-12 col-md-6">
-										<label for="current_date">Horas</label>
+										<label for="customer_po">Customer PO</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
-													<i class="far fa-clock"></i>
+													<i class="fas fa-user"></i>
 												</span>
 											</div>
-											<input type="text" class="form-control" name="current_date" id="current_date">
+											<input type="text" class="form-control" name="customer_po" id="customer_po">
 										</div>
 									</div>
 
@@ -123,22 +123,192 @@
 								<div class="form-row">
 
                                     <div class="form-group col-xs-12 col-md-6">
-										<label for="immediate_boss">Autorizo</label>
+										<label for="mc_type">M/C Type</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<span class="input-group-text">
-													<i class="fas fa-user-tie"></i>
+													<i class="fas fa-cog"></i>
 												</span>
 											</div>
-											<input type="text" class="form-control" name="immediate_boss" id="immediate_boss">
+											<input type="text" class="form-control" name="mc_type" id="mc_type">
 										</div>
 									</div>
-									
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="model">Model</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-cog"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="model" id="model">
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form-row">
+
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="serial">Serial Number</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-hashtag"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="serial" id="serial">
+										</div>
+									</div>
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="mfg_year">Mfg year</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-cogs"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="mfg_year" id="model">
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form-row">
+									<div class="form-group">
+										<p class="d-inline"><b>Status: &nbsp;</b></p>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="status" id="status_open" value="open">
+											<label class="form-check-label" for="status_open">Open</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="status" id="status_closed" value="closed">
+											<label class="form-check-label" for="status_closed">Closed</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group">
+										<p class="d-inline"><b>Overtime Accepted: &nbsp;</b></p>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="overtime_accepted" id="overtime_yes" value="yes">
+											<label class="form-check-label" for="overtime_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="overtime_accepted" id="overtime_no" value="no">
+											<label class="form-check-label" for="overtime_no">No</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group">
+										<p class="d-inline"><b>Parts Used: &nbsp;</b></p>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="parts_used" id="parts_used_yes" value="yes">
+											<label class="form-check-label" for="parts_used_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="parts_used" id="parts_used_no" value="no">
+											<label class="form-check-label" for="parts_used_no">No</label>
+										</div>
+									</div>
 								</div>
 
 								  <div class="form-group">
-									<label for="exampleFormControlTextarea1">Actividad</label>
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									<label for="service_details">Service Details</label>
+									<textarea name="service_details" class="form-control" id="service_details" rows="3"></textarea>
+								</div>
+								
+								<div class="form-row">
+
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="operation">Operation</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-wrench"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="operation" id="operation">
+										</div>
+									</div>
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="date">Date</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-regular fa-calendar"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="date" id="date">
+										</div>
+									</div>
+
+								</div>
+								
+								<div class="form-row">
+
+                                    <div class="form-group col-xs-12 col-md-4">
+										<label for="operation">Start time</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-wrench"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="operation" id="operation">
+										</div>
+									</div>
+                                    <div class="form-group col-xs-12 col-md-4">
+										<label for="date">End time</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-regular fa-calendar"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="date" id="date">
+										</div>
+									</div>
+                                    <div class="form-group col-xs-12 col-md-4">
+										<label for="date">Total</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-regular fa-calendar"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="date" id="date">
+										</div>
+									</div>
+
+								</div>
+																
+								<div class="form-row">
+
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="operation">Type</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-wrench"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="operation" id="operation">
+										</div>
+									</div>
+                                    <div class="form-group col-xs-12 col-md-6">
+										<label for="date">Technician</label>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="fas fa-solid fa-user"></i>
+												</span>
+											</div>
+											<input type="text" class="form-control" name="date" id="date">
+										</div>
+									</div>
+
 								</div>
 
 								<div class="d-none btn-group float-right" role="group" aria-label="Basic example">
@@ -150,7 +320,7 @@
 
 						</div>
 
-						<button type="submit" class="btn btn-primary mt-5 float-right" id="guardarRequisicion" form="customerForm">Guardar</button>
+						<button type="submit" class="btn btn-primary mt-5 float-right" id="guardarRequisicion" form="customerForm">Save</button>
 
 					</div>
 				</div>
